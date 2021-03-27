@@ -1,0 +1,15 @@
+{
+  "gamelists" : {
+    "action" : [{
+      "game_name" : "lol"
+    }, {
+      "game_name" : "olo"
+    } ],
+    "adventure" : [{
+      "game_name" : "lol"
+    } ],
+    "story" : [{
+      "game_name" : "lol"
+    } ]
+  }
+}

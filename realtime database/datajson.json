@@ -1,0 +1,38 @@
+{
+  "gamelists": {
+    "action": [
+      {
+        "game_name": "lol"
+      },
+      {
+        "game_name": "olo",
+        "system_requirement": {
+          "minimum_requirement": {
+            "CPU": "a",
+            "Capacity": "a",
+            "GPU": "a",
+            "OS": "a",
+            "RAM": "a"
+          },
+          "recommended_requirement": {
+            "CPU": "a",
+            "Capacity": "a",
+            "GPU": "a",
+            "OS": "a",
+            "RAM": "a"
+          }
+        }
+      }
+    ],
+    "adventure": [
+      {
+        "game_name": "lol"
+      }
+    ],
+    "story": [
+      {
+        "game_name": "lol"
+      }
+    ]
+  }
+}

@@ -22,7 +22,7 @@
         integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG"
         crossorigin="anonymous"></script>
 
-    <script type="text/jacascript" src="insert-data.js"></script>
+    <script type="text/javascript" src="insert-data2.js"></script>
 
     <title>Document</title>
 </head>
@@ -33,72 +33,106 @@
         <h1>Insert Game data</h1>
         <div class="row m-3">
             <div class="col-sm">
-                <input type="text" class="form-control" placeholder="game name" aria-label="game name">
+                <input type="text" id="gamename" class="gamename form-control" placeholder="game name" aria-label="game name">
             </div>
             <div class="col-sm">
-                <select class="form-select" aria-label="Default select example">
+                <select class="genre form-select" id="genre" aria-label="genre">
                     <option selected>genre</option>
                     <option value="1">action</option>
                     <option value="2">adventure</option>
                     <option value="3">story</option>
                 </select>
             </div>
-        </div>
-        <div class="row m-3">
             <div class="col-sm">
-                <input type="text" class="URLimg form-control" placeholder="URLimg" aria-label="Description">
-            </div>
-            <div class="col-sm">
-                <input type="text" class="Description form-control" placeholder="Description" aria-label="Description">
-            </div>
-        </div>
-        <div class="row m-3">
-            <div class="col-sm">
-                <input type="text" class="URLvideo form-control" placeholder="URLvideo" aria-label="Description">
-            </div>
-            <div class="col-sm">
-                <input type="text" class="URLRefImage form-control" placeholder="URLRefImage" aria-label="URLRefImage">
-            </div>
-            <div class="col-sm">
-                <input type="text" class="URLRefImage2 form-control" placeholder="URLRefImage2" aria-label="URLRefImage2">
+                <select class="platform form-select" id="platform" aria-label="platform">
+                    <option selected>platform</option>
+                    <option value="1">PC</option>
+                    <option value="2">Playstation</option>
+                    <option value="3">Nintendo</option>
+                </select>
             </div>
         </div>
         <div class="row m-3">
             <div class="col-sm">
-                <input type="text" class="devoloper form-control" placeholder="devoloper" aria-label="devoloper">
+                <input type="text" id="URLimg" class="URLimg form-control" placeholder="URLimg" aria-label="Description">
             </div>
             <div class="col-sm">
-                <input type="text" class="publisher form-control" placeholder="publisher" aria-label="publisher">
+                <input type="text" id="Description" class="Description form-control" placeholder="Description" aria-label="Description">
+            </div>
+        </div>
+        <div class="row m-3">
+            <div class="col-sm">
+                <input type="text" id="URLvideo" class="URLvideo form-control" placeholder="URLvideo" aria-label="Description">
+            </div>
+            <div class="col-sm">
+                <input type="text" id="URLRefImage" class="URLRefImage form-control" placeholder="URLRefImage" aria-label="URLRefImage">
+            </div>
+            <div class="col-sm">
+                <input type="text" id="URLRefImage2" class="URLRefImage2 form-control" placeholder="URLRefImage2" aria-label="URLRefImage2">
+            </div>
+        </div>
+        <div class="row m-3">
+            <div class="col-sm">
+                <input type="text" id="devoloper" class="devoloper form-control" placeholder="devoloper" aria-label="devoloper">
+            </div>
+            <div class="col-sm">
+                <input type="text" id="publisher" class="publisher form-control" placeholder="publisher" aria-label="publisher">
             </div>
         </div>
 
         <h2>System requirement</h2>
 
 
-        <h3>minimum requirement</h3>
+        <h3>Minimum requirement</h3>
         <div class="row m-3">
             <div class="col-sm">
-                <input type="text" class="form-control" placeholder="OS" aria-label="OS">
+                <input type="text" id="OS1" class="OS1 form-control" placeholder="OS" aria-label="OS">
             </div>
             <div class="col-sm">
-                <input type="text" class="form-control" placeholder="CPU" aria-label="CPU">
+                <input type="text" id="CPU1" class="CPU1 form-control" placeholder="CPU" aria-label="CPU">
             </div>
         </div>
         <div class="row m-3">
             <div class="col-sm">
-                <input type="text" class="form-control" placeholder="GPU" aria-label="GPU">
+                <input type="text" id="GPU1" class="GPU1 form-control" placeholder="GPU" aria-label="GPU">
             </div>
             <div class="col-sm">
-                <input type="text" class="form-control" placeholder="RAM" aria-label="RAM">
+                <input type="text" id="RAM1" class="RAM1 form-control" placeholder="RAM" aria-label="RAM">
             </div>
         </div>
         <div class="row m-3">
             <div class="col-sm">
-                <input type="text" class="form-control" placeholder="Capacity" aria-label="Capacity">
+                <input type="text" id="Capacity1" class="Capacity1 form-control" placeholder="Capacity" aria-label="Capacity">
             </div>
         </div>
-        <button class="btn btn-primary" type="submit">ADD</button>
+
+
+        <h3>Recommended requirement</h3>
+        <div class="row m-3">
+            <div class="col-sm">
+                <input type="text" id="OS2" class="OS2 form-control" placeholder="OS" aria-label="OS">
+            </div>
+            <div class="col-sm">
+                <input type="text" id="CPU2" class="CPU2 form-control" placeholder="CPU" aria-label="CPU">
+            </div>
+        </div>
+        <div class="row m-3">
+            <div class="col-sm">
+                <input type="text" id="GPU2" class="GPU2 form-control" placeholder="GPU" aria-label="GPU">
+            </div>
+            <div class="col-sm">
+                <input type="text" id="RAM2" class="RAM2 form-control" placeholder="RAM" aria-label="RAM">
+            </div>
+        </div>
+        <div class="row m-3">
+            <div class="col-sm">
+                <input type="text" id="Capacity2" class="Capacity2 form-control" placeholder="Capacity" aria-label="Capacity">
+            </div>
+        </div>
+        <button class="btn btn-primary" type="submit" onclick="addGame()">ADD</button>
     </div>
+
+
     
 </body>
 <!-- The core Firebase JS SDK is always required and must be listed first -->
@@ -108,7 +142,7 @@
      https://firebase.google.com/docs/web/setup#available-libraries -->
 <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-analytics.js"></script>
 
-<script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-database.js"></script>
 
 <script>
     // Your web app's Firebase configuration

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn firebase</title>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-firestore.js"></script>
+
+    <style>
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+        }
+
+        ul {
+            padding: 3rem;
+            border-radius: 10px;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        span {
+            display: block;
+        }
+
+        span:nth-child(1) {
+            font-size: 2rem;
+            margin-bottom: .5rem;
+        }
+
+        span:nth-child(2) {
+            color: #333;
+        }
+    </style>
+
+</head>
+<body>
+
+
+
+    <div class="container">
+        <h1>Learn Firebase</h1>
+
+        <ul id="gameList">
+
+        </ul>
+        <img id="gameimage" src="" alt="">
+    </div>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyAoBo_hEbHRvPdB-L-l8EuDXO_dCRfKiCM",
+    authDomain: "fir-testproject-60cd1.firebaseapp.com",
+    projectId: "fir-testproject-60cd1",
+    storageBucket: "fir-testproject-60cd1.appspot.com",
+    messagingSenderId: "1019351476196",
+    appId: "1:1019351476196:web:4f6d71ad2dda9f1dd449f1",
+    measurementId: "G-JG09C3W4GV"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+  const db = firebase.firestore();
+</script>
+
+<script src="index.js"></script>
+
+</body>
+</html>

@@ -1,5 +1,5 @@
 //firebase
-var firebaseRef = firebase.database().ref("gamelists");
+var firebaseRef = firebase.database().ref("listgame");
 
 //value input
 var gameName = document.getElementById("gamename").value;

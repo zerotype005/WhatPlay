@@ -5,10 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.3/firebase-firestore.js"></script>
     <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-firestore.js"></script>
-
     <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
     
 
@@ -53,11 +52,9 @@
   </nav>
   <div class="container">
     <div class="row">
-      <div class="col-sm-4">
-        <h2>Game</h2>
-        <h5>poster game:</h5>
-        <img src="">
-        <div id="platform"></div>
+      <ul id="game_NP">
+        
+      </ul>
         <h3>Some Links</h3>
         <p>store</p>
         <ul class="nav nav-pills nav-stacked">
@@ -98,20 +95,8 @@
         measurementId: "G-PT88XZBM3P"
     };
     // Initialize Firebase
-    firebase.initializeApp(firebaseConfig);
-
-    var firebaseRef = firebase.database().ref("gamelists");
-
-
-    firebaseRef.once("value", function(snapshot){
-      var data = snapshot.val();
-      snapshot.forEach(function(element){
-        document.querySelector('#platform').innerHTML += `<div>${element.action.val()}</div>`
-        console.log(element.val())
-      })
-      
-    })
     </script>
+    <script src="index2.js"></script>
   </body>
 
 </html>

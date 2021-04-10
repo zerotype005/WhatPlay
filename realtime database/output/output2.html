@@ -5,36 +5,62 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!----------------------------------------------firebase--------------------------------------------------->
+
     <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/8.3.3/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.3.3/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.3/firebase-analytics.js"></script>
+
+<!------------------------------------------------bootstrap---------------------------------------------->
+
+    <link rel="stylesheet" 
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+<!---------------------------------------------------------------------------------------------------->
     <title>Document</title>
     <style>
       .container{
-        max-width: 960px;
+        max-width: 500px;
         margin: 0 auto;
       }
       ul{
+        display: flex;
         padding: 3rem;
         border-radius: 10px;
         box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+        flex-direction: column;
       }
       span{
         display: block;
+      }
+      li{
+        padding: 10px;
+        max-width: 500px;
+      }
+      img{
+        height: 200px;
+        width: 200px;
+        border: 2px solid black;
       }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>game</h1>
+        <ul id="data_game">
+        </ul>
         <ul id="list_game">
         </ul>
+        <ul id="img_game">
+        </ul>
+        <img id="myimg"><label id="upimg"></label>
     </div>
 
         
 </body>
-
-<script src="https://www.gstatic.com/firebasejs/8.3.3/firebase-analytics.js"></script>
 
 <script>
   // Your web app's Firebase configuration

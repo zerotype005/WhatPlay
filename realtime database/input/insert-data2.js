@@ -27,8 +27,40 @@ let addGame = function () {
     var Capacity2 = document.getElementById("Capacity2").value;
 
     //connect to database
-    const firebaseRef = firebase.database().ref("gamelists");
-    firebaseRef.push({
+    var firebaseRef = firebase.database().ref(`${genre}`);
+    firebaseRef.push([
+        {
+            game_name: gameName,
+            genre: genre,
+            Platform: platform,
+            URL_img: URLimg,
+            desc: Description,
+            URL_video: URLvideo,
+            URLRef_Image: URLRefImage,
+            URLRef_Image2: URLRefImage2,
+            Developer: Developer,
+            Publisher: Publisher,
+            System_requirement: {
+                minimum_requirement:
+                {
+                    OS: OS,
+                    CPU: CPU,
+                    GPU: GPU,
+                    RAM: RAM,
+                    Capacity: Capacity
+                },
+                recommended_requirement: {
+                    OS: OS2,
+                    CPU: CPU2,
+                    GPU: GPU2,
+                    RAM: RAM2,
+                    Capacity: Capacity2
+                }
+
+            }
+        },
+    ]);
+    /* firebaseRef.push({
         action: [
             {
                 game_name: gameName,
@@ -61,8 +93,7 @@ let addGame = function () {
                 }
             },
         ]
-    });
-
+    }); */
     alert("Add list complete");
 
 }

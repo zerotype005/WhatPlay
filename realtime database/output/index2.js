@@ -1,7 +1,10 @@
-var database = firebase.database();
-var ref = database.ref("action");
-
-ref.on(value,function(snapshot){
-    var data = child.snapshot.val();
-    console.log(data.name)
-})
+var database = firebase.database().ref();
+database.child("action").get().then((snapshot) => {
+    if (snapshot.exists()) {
+      console.log(snapshot.val());
+    } else {
+      console.log("No data available");
+    }
+  }).catch((error) => {
+    console.error(error);
+  });

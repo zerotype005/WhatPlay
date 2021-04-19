@@ -1,4 +1,5 @@
 let addGame = function () {
+    var gameId = document.getElementById("gameId").value;
     var gameName = document.getElementById("gamename").value;
     var genre = document.getElementById("genre").value;
     var platform = document.getElementById("platform").value;
@@ -27,39 +28,38 @@ let addGame = function () {
     var Capacity2 = document.getElementById("Capacity2").value;
 
     //connect to database
-    var firebaseRef = firebase.database().ref(`${genre}`);
-    firebaseRef.push([
-        {
-            game_name: gameName,
-            genre: genre,
-            Platform: platform,
-            URL_img: URLimg,
-            desc: Description,
-            URL_video: URLvideo,
-            URLRef_Image: URLRefImage,
-            URLRef_Image2: URLRefImage2,
-            Developer: Developer,
-            Publisher: Publisher,
-            System_requirement: {
-                minimum_requirement:
-                {
-                    OS: OS,
-                    CPU: CPU,
-                    GPU: GPU,
-                    RAM: RAM,
-                    Capacity: Capacity
-                },
-                recommended_requirement: {
-                    OS: OS2,
-                    CPU: CPU2,
-                    GPU: GPU2,
-                    RAM: RAM2,
-                    Capacity: Capacity2
-                }
-
+    var firebaseRef = firebase.database().ref(`gamelists/${genre}/${gameId}`).set({
+        game_id: gameId,
+        game_name: gameName,
+        genre: genre,
+        Platform: platform,
+        URL_img: URLimg,
+        desc: Description,
+        URL_video: URLvideo,
+        URLRef_Image: URLRefImage,
+        URLRef_Image2: URLRefImage2,
+        Developer: Developer,
+        Publisher: Publisher,
+        System_requirement: {
+            minimum_requirement:
+            {
+                OS: OS,
+                CPU: CPU,
+                GPU: GPU,
+                RAM: RAM,
+                Capacity: Capacity
+            },
+            recommended_requirement: {
+                OS: OS2,
+                CPU: CPU2,
+                GPU: GPU2,
+                RAM: RAM2,
+                Capacity: Capacity2
             }
-        },
-    ]);
+
+        }
+    });
+
     /* firebaseRef.push({
         action: [
             {

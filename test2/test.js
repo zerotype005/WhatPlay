@@ -1,8 +1,12 @@
 function addList() {
     //connect to database
-    const firebaseRef = firebase.database().ref("Admin");
-    firebaseRef.child("user/user1").set("Root");
-    firebaseRef.child("user2/user1").set("Root2");
+    var firebaseRef = firebase.database().ref("gamelists");
+    firebaseRef.child("action").push({
+        game_id: "game1",
+    });
+    firebaseRef.child("adventure");
+    firebaseRef.child("story");
+
 }
 window.onload=function(){
     var firebaseRef=firebase.database().ref("userlist");

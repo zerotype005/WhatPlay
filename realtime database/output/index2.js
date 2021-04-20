@@ -1,5 +1,11 @@
 const dbRef = firebase.database().ref("gamelists");
-dbRef.child("action").child("action001").get().then((snapshot) => {
+//เเยกประเภทเกม
+var genre = ""
+//เเยกไอดีเกม
+var id_game = ""
+
+
+dbRef.child(genre).child(id_game).get().then((snapshot) => {
   if (snapshot.exists()) {
     console.log(snapshot.val());
   } else {

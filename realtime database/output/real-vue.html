@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HTML DOM Objects</title>
+</head>
+<body>
+
+<p>Click the button to get the text of the document's title.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var x = document.getElementsByTagName("TITLE")[0].text;
+  document.getElementById("demo").innerHTML = x;
+}
+</script>
+
+</body>
+</html>

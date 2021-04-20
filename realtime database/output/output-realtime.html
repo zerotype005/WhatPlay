@@ -30,7 +30,48 @@
     <title>Document</title>
 </head>
 <body>
+    <title>Document</title>
+    <style>
+      .container{
+        max-width: 500px;
+        margin: 0 auto;
+      }
+      ul{
+        display: flex;
+        padding: 3rem;
+        border-radius: 10px;
+        box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+        flex-direction: column;
+      }
+      span{
+        display: block;
+      }
+      li{
+        padding: 10px;
+        max-width: 500px;
+      }
+      img{
+        height: 200px;
+        width: 200px;
+        border: 2px solid black;
+      }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>game</h1>
+        <ul id="data_game">
+            <div id="name"></div>
+            <div id="plat"></div>
+            <div id="dev"></div>
+        </ul>
+        <ul id="list_game">
+            <div id="des"></div>
+        </ul>
+        <img id="myimg"><label id="upimg"></label>
+    </div>
 
+    
 
 
 <!-- The core Firebase JS SDK is always required and must be listed first -->

@@ -82,6 +82,8 @@ function generateinfo(genre, platform,dev,pub) {
 function generate_minimum(CPU, Cap, GPU, OS, RAM) {
   const div = document.createElement('div');
   const h2 = document.createElement('h2');
+  const h3 = document.createElement('h4');
+
   const p = document.createElement('p')
   const p2 = document.createElement('p')
   const p3 = document.createElement('p')
@@ -89,6 +91,7 @@ function generate_minimum(CPU, Cap, GPU, OS, RAM) {
   const p5 = document.createElement('p')
 
   h2.appendChild(document.createTextNode("System_reauirement"));
+  h3.appendChild(document.createTextNode("minimum_requirement"));
   p.appendChild(document.createTextNode("CPU : " + CPU));
   p2.appendChild(document.createTextNode("Capacity : " + Cap));
   p3.appendChild(document.createTextNode("GPU : " + GPU));
@@ -99,6 +102,42 @@ function generate_minimum(CPU, Cap, GPU, OS, RAM) {
   div.classList.add('playerCard')
 
   div.appendChild(h2);
+  div.appendChild(h3);
+
+  div.appendChild(p);
+  div.appendChild(p2);
+  div.appendChild(p3);
+  div.appendChild(p4);
+  div.appendChild(p5);
+
+  return(div);
+}
+
+function generate_per(CPU, Cap, GPU, OS, RAM) {
+  const div = document.createElement('div');
+  const h2 = document.createElement('h2');
+  const h3 = document.createElement('h4');
+
+  const p = document.createElement('p')
+  const p2 = document.createElement('p')
+  const p3 = document.createElement('p')
+  const p4 = document.createElement('p')
+  const p5 = document.createElement('p')
+
+  h2.appendChild(document.createTextNode("System_reauirement"));
+  h3.appendChild(document.createTextNode("recommended_requirement"));
+  p.appendChild(document.createTextNode("CPU : " + CPU));
+  p2.appendChild(document.createTextNode("Capacity : " + Cap));
+  p3.appendChild(document.createTextNode("GPU : " + GPU));
+  p4.appendChild(document.createTextNode("OS : " + OS));
+  p5.appendChild(document.createTextNode("RAM : " + RAM));
+
+
+  div.classList.add('playerCard')
+
+  div.appendChild(h2);
+  div.appendChild(h3);
+
   div.appendChild(p);
   div.appendChild(p2);
   div.appendChild(p3);
@@ -117,6 +156,7 @@ div3.classList.add('cards')
 div3.appendChild(generatename(snapshot.child("adventure001").child("game_name").val(), snapshot.child("adventure001").child("desc").val()));
 div3.appendChild(generateinfo(snapshot.child("adventure001").child("genre").val(), snapshot.child("adventure001").child("Platform").val(), snapshot.child("adventure001").child("Developer").val(), snapshot.child("adventure001").child("Publisher").val()));
 div3.appendChild(generate_minimum(snapshot.child("adventure001").child("System_requirement").child("minimum_requirement").child("CPU").val(), snapshot.child("adventure001").child("System_requirement").child("minimum_requirement").child("Capacity").val(), snapshot.child("adventure001").child("System_requirement").child("minimum_requirement").child("GPU").val(), snapshot.child("adventure001").child("System_requirement").child("minimum_requirement").child("OS").val(), snapshot.child("adventure001").child("System_requirement").child("minimum_requirement").child("RAM").val()));
+div3.appendChild(generate_per(snapshot.child("adventure001").child("System_requirement").child("recommended_requirement").child("CPU").val(), snapshot.child("adventure001").child("System_requirement").child("recommended_requirement").child("Capacity").val(), snapshot.child("adventure001").child("System_requirement").child("recommended_requirement").child("GPU").val(), snapshot.child("adventure001").child("System_requirement").child("recommended_requirement").child("OS").val(), snapshot.child("adventure001").child("System_requirement").child("recommended_requirement").child("RAM").val()));
 
  img = snapshot.child("adventure001").child("URL_img").val()
  console.log(snapshot.child("adventure001").child("URL_img").val())

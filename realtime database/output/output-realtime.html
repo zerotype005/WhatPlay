@@ -20,7 +20,7 @@
     crossorigin="anonymous"></script>
 
 
-    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="base.css">
 
     <script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
     <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
@@ -30,44 +30,25 @@
 <body>
     <title>Document</title>
     <style>
-      .container{
-        max-width: 500px;
-        margin: 0 auto;
-      }
-      ul{
-        display: flex;
-        padding: 3rem;
-        border-radius: 10px;
-        box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
-        flex-direction: column;
-      }
-      span{
-        display: block;
-      }
-      li{
-        padding: 10px;
-        max-width: 500px;
-      }
-      img{
-        height: 200px;
-        width: 200px;
-        border: 2px solid black;
-      }
+      .cards {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 20px;
+      padding: 20px;
+    }
+
+    .playerCard {
+      background: white;
+      padding: 20px;
+    }
+
+    .playerCard h2 {
+      color: black;
+    }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>game</h1>
-        <ul id="data_game">
-            <p id="name"></p>
-            <p id="plat"></p>
-            <p id="dev"></p>
-        </ul>
-        <ul id="list_game">
-            <div id="des"></div>
-        </ul>
-        <img id="myimg"><label id="upimg"></label>
-    </div>
+    
 
     
 

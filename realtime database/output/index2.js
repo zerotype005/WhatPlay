@@ -116,7 +116,7 @@ dbRef.child("adventure").get().then((snapshot) => {
 div3.classList.add('cards') 
 div3.appendChild(generatename(snapshot.child("adventure001").child("game_name").val(), snapshot.child("adventure001").child("desc").val()));
 div3.appendChild(generateinfo(snapshot.child("adventure001").child("genre").val(), snapshot.child("adventure001").child("Platform").val(), snapshot.child("adventure001").child("Developer").val(), snapshot.child("adventure001").child("Publisher").val()));
-div3.appendChild(generate_minimum(snapshot.child("adventure001").child("System_requirement").child("CPU").val(), snapshot.child("adventure001").child("System_requirement").child("Capacity").val(), snapshot.child("adventure001").child("System_requirement").child("GPU").val(), snapshot.child("adventure001").child("System_requirement").child("OS").val(), snapshot.child("adventure001").child("System_requirement").child("RAM").val()));
+div3.appendChild(generate_minimum(snapshot.child("adventure001").child("System_requirement").child("minimum_requirement").child("CPU").val(), snapshot.child("adventure001").child("System_requirement").child("minimum_requirement").child("Capacity").val(), snapshot.child("adventure001").child("System_requirement").child("minimum_requirement").child("GPU").val(), snapshot.child("adventure001").child("System_requirement").child("minimum_requirement").child("OS").val(), snapshot.child("adventure001").child("System_requirement").child("minimum_requirement").child("RAM").val()));
 
  img = snapshot.child("adventure001").child("URL_img").val()
  console.log(snapshot.child("adventure001").child("URL_img").val())

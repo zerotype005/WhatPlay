@@ -10,20 +10,14 @@ div.classList.add("wrapper");
 document.body.appendChild(div);
 
 var ul = document.createElement('ul');
-var Arra = ['one',  'two', 'three'];
 
-Arra.forEach(function(item) {
-    var li = document.createElement('li');
-    li.appendChild(document.createTextNode(item));
-    ul.appendChild(li);
-});
 
 div.appendChild(ul);
 
 
 
 var div2 = document.createElement('div');
-var Arr = ['Wammu',  'Kar'];
+var Arr = ['Wammu',  ''];
 Arr.forEach(function(item) {
     var P = document.createElement('p');
     P.appendChild(document.createTextNode(item));
@@ -57,13 +51,18 @@ function generatename(name, desc) {
   div.appendChild(p);
   return(div);
 }
-function generateinfo(genre, platform,dev,pub) {
+function generateinfo(genre, img1,platform,dev,pub) {
   const div = document.createElement('div');
+  const img = document.createElement('img')
+
   const p = document.createElement('p')
   const p2 = document.createElement('p')
   const p3 = document.createElement('p')
   const p4 = document.createElement('p')
-
+  img.setAttribute("src", String(img1));
+  img.setAttribute("alt", "Nice Photo");
+  img.classList.add("Cool");
+  div.appendChild(img)
   p.appendChild(document.createTextNode("Genre : " + genre));
   p2.appendChild(document.createTextNode("Platform : " + platform));
   p3.appendChild(document.createTextNode("Deverlop : " + dev));
@@ -154,21 +153,17 @@ dbRef.child("adventure").get().then((snapshot) => {
     console.log(snapshot.child("adventure001").child("game_name").val());
 div3.classList.add('cards') 
 div3.appendChild(generatename(snapshot.child("adventure001").child("game_name").val(), snapshot.child("adventure001").child("desc").val()));
-div3.appendChild(generateinfo(snapshot.child("adventure001").child("genre").val(), snapshot.child("adventure001").child("Platform").val(), snapshot.child("adventure001").child("Developer").val(), snapshot.child("adventure001").child("Publisher").val()));
+div3.appendChild(generateinfo(snapshot.child("adventure001").child("genre").val(),snapshot.child("adventure001").child("URL_img").val(), snapshot.child("adventure001").child("Platform").val(), snapshot.child("adventure001").child("Developer").val(), snapshot.child("adventure001").child("Publisher").val()));
 div3.appendChild(generate_minimum(snapshot.child("adventure001").child("System_requirement").child("minimum_requirement").child("CPU").val(), snapshot.child("adventure001").child("System_requirement").child("minimum_requirement").child("Capacity").val(), snapshot.child("adventure001").child("System_requirement").child("minimum_requirement").child("GPU").val(), snapshot.child("adventure001").child("System_requirement").child("minimum_requirement").child("OS").val(), snapshot.child("adventure001").child("System_requirement").child("minimum_requirement").child("RAM").val()));
 div3.appendChild(generate_per(snapshot.child("adventure001").child("System_requirement").child("recommended_requirement").child("CPU").val(), snapshot.child("adventure001").child("System_requirement").child("recommended_requirement").child("Capacity").val(), snapshot.child("adventure001").child("System_requirement").child("recommended_requirement").child("GPU").val(), snapshot.child("adventure001").child("System_requirement").child("recommended_requirement").child("OS").val(), snapshot.child("adventure001").child("System_requirement").child("recommended_requirement").child("RAM").val()));
 
- img = snapshot.child("adventure001").child("URL_img").val()
  console.log(snapshot.child("adventure001").child("URL_img").val())
     
   } else {
     console.log("No data available");
   }
 })
-ph.setAttribute("src", img);
-ph.setAttribute("alt", "Nice Photo");
-ph.classList.add("Cool");
-div.appendChild(ph)
+
 document.body.insertBefore(div3,div);
 
 

@@ -1,0 +1,20 @@
+.container {
+    background-color: black;
+    display: flex;
+}
+
+.group1 {
+    background-color: red;
+}
+
+.group2 {
+    background-color: yellow;
+}
+
+.group3 {
+    background-color: green;
+}
+
+.group4 {
+    background-color: blue;
+}

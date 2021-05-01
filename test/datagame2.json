@@ -1,0 +1,182 @@
+{
+  "gamelists": {
+    "action": [
+      {
+        "Developer": "Ubisoft Montreal",
+        "Platform": "PC/Playstation",
+        "Publisher": "Ubisoft",
+        "System_requirement": {
+          "minimum_requirement": {
+            "CPU": "Intel Core i5-2400s @ 2.5 GHz or AMD FX-6350 @ 3.9 GHz or equivalent",
+            "Capacity": "42 GB",
+            "GPU": "NVIDIA GeForce GTX 660 or AMD R9 270 (2048 MB VRAM with Shader Model 5.0 or better)",
+            "OS": "Windows 7 SP1, Windows 8.1, Windows 10 (64-bit versions only)",
+            "RAM": "6 GB"
+          },
+          "recommended_requirement": {
+            "CPU": "Intel Core i7- 3770 @ 3.5 GHz or AMD FX-8350 @ 4.0 GHz",
+            "Capacity": "42 GB",
+            "GPU": "NVIDIA GeForce GTX 760 or AMD R9 280X (3GB VRAM with Shader Model 5.0 or better)",
+            "OS": "Windows 7 SP1, Windows 8.1, Windows 10 (64-bit versions only)",
+            "RAM": "8 GB"
+          }
+        },
+        "URLRef_Image": "https://cdn.tigthai.com/imguploads/201710/11/01685770015077077052495_ac_news_quests_overview_ncsa_293408.jpg",
+        "URLRef_Image2": "https://www.eteknix.com/wp-content/uploads/2017/06/acorigins10.jpg",
+        "URL_img": "https://asia.playstation.com/content/dam/pscom/games/2017/assassins-creed-origins/assassins-creed-origins-mainvisual-sp.png",
+        "URL_video": "https://youtu.be/cK4iAjzAoas",
+        "desc": "",
+        "game_id": "action001",
+        "game_name": "Assassin's Creed Origin",
+        "genre": "action"
+      },
+      {
+        "Developer": "Crystal Dynamics, Eidos-Montréal, Nixxes",
+        "Platform": "PC/Laptop",
+        "Publisher": "Square Enix",
+        "System_requirement": {
+          "minimum_requirement": {
+            "CPU": "i3-4160 or AMD equivalent",
+            "Capacity": "75 GB",
+            "GPU": "NVIDIA GTX 950 / AMD 270 (min 2GB video ram)",
+            "OS": "Windows 10 64-bit",
+            "RAM": "8 GB"
+          },
+          "recommended_requirement": {
+            "CPU": "Intel Core i7 4770K, 3.4 Ghz or AMD Ryzen 5 1600, 3.2 Ghz",
+            "Capacity": "110 GB",
+            "GPU": "NVIDIA GTX 1060 6GB or AMD Radeon RX 480, 8GB",
+            "OS": "Windows 10 64-bit",
+            "RAM": "16 GB"
+          }
+        },
+        "URLRef_Image": "",
+        "URLRef_Image2": "",
+        "URL_img": "",
+        "URL_video": "",
+        "desc": "",
+        "game_id": "action003",
+        "game_name": "Marvel's Avenger",
+        "genre": "action"
+      },
+      {
+        "Developer": "SEGA",
+        "Platform": "PC/Laptop",
+        "Publisher": "SEGA",
+        "System_requirement": {
+          "minimum_requirement": {
+            "CPU": "Intel Core 2 Duo E6300 and above",
+            "Capacity": "80 GB",
+            "GPU": "NVIDIA GeForce 7800GT AMD RADEON HD2900XT or a Graphics Card of the same caliber and above",
+            "OS": "Windows 10 64bit",
+            "RAM": "2 GB"
+          },
+          "recommended_requirement": {
+            "CPU": "Intel Core i5 6500 and above",
+            "Capacity": "",
+            "GPU": "NVIDIA GeForce GTX 750 Ti or a Graphics Card of the same caliber and above",
+            "OS": "Windows 10 64bit",
+            "RAM": "80 GB"
+          }
+        },
+        "URLRef_Image": "",
+        "URLRef_Image2": "",
+        "URL_img": "",
+        "URL_video": "",
+        "desc": "Phantasy Star Online 2 เป็นเกมส์แนว online role-playing game (RPG) ภาคต่อจาก Phantasy Star Onlineที่ได้รับความนิยมสูง ถูกพัฒนาขึ้นโดย โซนิคทีม (Sonic Team) และจัดจำหน่ายโดย เซก้า (Sega) ในเกมส์นี้จะเป็นแนว แฟนตาซี มีรูปแบบการผจญภัยต่อสู้กับเหล่ามอนสเตอร์ในต่างดาว มาพร้อมกับเนื้อเรื่องภายในเกมส์ที่เข้มข้นน่าติดตาม ซึ่งจุดเด่นอีกหนึ่งจุดก็คือการปราบเหล่ามอนสเตอร์ระดับบอสที่ทั้งตัวใหญ่อลังการแล้ว ยังมีความยากในการปราบที่สูงมากอีกด้วย Phantasy Star Online 2 เป็นวิดีโอเกมส์ในชุด Phantasy Star series สำหรับเล่นใน Microsoft Windows 4, PlayStation Vita, Android, iOS และกำลังจะพัฒนาให้ PlayStation 4 เล่นได้ในปี2016",
+        "game_id": "action004",
+        "game_name": "Phantasy Star Online 2 ",
+        "genre": "action"
+      }
+    ],
+    "adventure": [
+      {
+        "Developer": "Respawn Entertainment",
+        "Platform": "PC/Playstation",
+        "Publisher": "Electronic Arts",
+        "System_requirement": {
+          "minimum_requirement": {
+            "CPU": "AMD FX-6100/Intel i3-3220 or Equivalent",
+            "Capacity": "55 GB",
+            "GPU": "AMD Radeon HD 7750, NVIDIA GeForce GTX 650 or Equivalent",
+            "OS": "64-bit Windows 7/8.1/10",
+            "RAM": "8 GB"
+          },
+          "recommended_requirement": {
+            "CPU": "AMD Ryzen 7 1700/Intel i7-6700K or Equivalent",
+            "Capacity": "55 GB",
+            "GPU": "AMD RX Vega 56, Nvidia GTX 1070/GTX1660Ti or Equivalent",
+            "OS": "64-bit Windows 7/8.1/10",
+            "RAM": "16 GB"
+          }
+        },
+        "URLRef_Image": "https://gamingbolt.com/wp-content/uploads/2019/06/star-wars-jedi-fallen-order-image-4.jpg",
+        "URLRef_Image2": "https://i.ytimg.com/vi/HdsUTKl9J3E/maxresdefault.jpg",
+        "URL_img": "https://s3.gaming-cdn.com/images/products/2711/orig/star-wars-jedi-fallen-order-cover.jpg",
+        "URL_video": "https://youtu.be/0GLbwkfhYZk",
+        "desc": "เกมแนวแอ็คชั่นผจญภัยมุมมองบุคคลที่ 3 จากค่าย Respawn Entertainment ที่เน้นการเรียงร้อยเรื่องราวในโหมดผู้เล่นคนเดียว โดยให้ผู้เล่นสวมบทบาทเป็นเจไดพาดาวัน ที่หนีรอดจากปฏิบัติการ Order 66 อย่างหวุดหวิด ซึ่งเป็นเรื่องราวที่เกิดขึ้นหลังจากเหตุการณ์ในภาค 3: Revenge of the Sith ซึ่งออกแบบมาให้ดุเดือดเข้มข้นเหมือนกับฉากดวลดาบไลท์เซเบอร์ Star Wars ที่เห็นกันในหนัง ผู้เล่นจะต้องวางแผนกลยุทธ์ในการต่อสู้ วิเคราะห์จุดแข็งและจุดอ่อน และวางหมากในการฝึกฝนพลังเจไดเพื่อเอาชนะคู่ต่อสู้ พร้อมกับไขปริศนาต่างๆ ที่พบเจอ",
+        "game_id": "adventure001",
+        "game_name": "STAR WARS Jedi: Fallen Order™",
+        "genre": "adventure"
+      },
+      {
+        "Developer": "Hazelight",
+        "Platform": "PC/Playstation",
+        "Publisher": "Electronic Arts",
+        "System_requirement": {
+          "minimum_requirement": {
+            "CPU": "Intel core i3-2100T @ 2.5GHz/AMD FX 6100, or better",
+            "Capacity": "25 GB",
+            "GPU": "NVIDIA GeForce GTX 650Ti 2GB, AMD Radeon HD 7750 2GB",
+            "OS": "Windows 7 64-bit, 8.1 64-bit or Windows 10 64-bit",
+            "RAM": "8 GB"
+          },
+          "recommended_requirement": {
+            "CPU": "Intel Core i5 3570K; AMD Ryzen 3 1300x or equivalent",
+            "Capacity": "25 GB",
+            "GPU": "Nvidia GTX 960; AMD R9 290 or equivalent",
+            "OS": "Windows 7 64-bit, 8.1 64-bit or Windows 10 64-bit",
+            "RAM": "16 GB"
+          }
+        },
+        "URLRef_Image": "https://news.xbox.com/en-us/wp-content/uploads/sites/2/AWO_01.jpg?resize=1920%2C1080",
+        "URLRef_Image2": "https://images-na.ssl-images-amazon.com/images/I/918mlnyzp5L._AC_SL1500_.jpg",
+        "URL_img": "https://image.api.playstation.com/cdn/UP0006/CUSA07995_00/es9H68Zt2bCx8VHQ91tPy5CmnMoyHrgYKFkyKk6YRjLvfL849ER7E4GV8Mu1Zmfe.png",
+        "URL_video": "https://youtu.be/_ApSmPvxz1o",
+        "desc": "เป็นเกมผจญภัยที่ต้องร่วมมือกันเล่นเท่านั้น โดยคุณจะได้สวมบทบาทเป็นหนึ่งในสองนักโทษซึ่งต้องเสี่ยงอันตรายหลบหนีออกจากคุก แผนการแหกคุกอันน่าตื่นเต้นในตอนเริ่มจะเปลี่ยนไปสู่การผจญภัยที่บีบคั้นอารมณ์และยากจะคาดเดาอย่างรวดเร็วในแบบที่คุณไม่เคยพบหรือเล่นมาก่อน A Way Out คือประสบการณ์ที่สัมผัสได้โดยการเล่นสองคนเท่านั้น ผู้เล่นแต่ละคนจะได้ควบคุมหนึ่งในตัวละครหลักคือลีโอและวินเซนต์ ที่ต้องจำใจมาร่วมมือกันเพื่อหลบหนีออกจากคุกและกอบกู้อิสรภาพของตนกลับมา",
+        "game_id": "adventure002",
+        "game_name": "A Way Out",
+        "genre": "adventure"
+      },
+      {
+        "Developer": "miHoYo, Shanghai Miha Touring Film Technology Co., Ltd.",
+        "Platform": "PC/Laptop",
+        "Publisher": "miHoYo",
+        "System_requirement": {
+          "minimum_requirement": {
+            "CPU": "Intel Core i5 ",
+            "Capacity": "30 GB",
+            "GPU": "NVIDIA® GeForce® GT 1030 ",
+            "OS": "Windows 7 SP1 64-bit or Windows 8.1 64-bit or Windows 10 64-bit",
+            "RAM": "8 GB"
+          },
+          "recommended_requirement": {
+            "CPU": "Intel Core i7",
+            "Capacity": "30 GB  ",
+            "GPU": "NVIDIA GeForce GTX 1060 6 GB ",
+            "OS": "Windows 7 SP1 64-bit or Windows 8.1 64-bit or Windows 10 64-bit",
+            "RAM": "16 GB"
+          }
+        },
+        "URLRef_Image": "https://sm.pcmag.com/t/pcmag_ap/review/g/genshin-im/genshin-impact-for-pc_kcyd.1920.jpg",
+        "URLRef_Image2": "https://media.npr.org/assets/img/2020/11/25/genshin_wide-59ae4e3c66176e7b048f5c7dbf2abd4b136cbe00.jpg",
+        "URL_img": "https://giantbomb1.cbsistatic.com/uploads/original/45/459166/3245697-genshin.jpg",
+        "URL_video": "https://youtu.be/HLUY1nICQRY",
+        "desc": "",
+        "game_id": "adventure003",
+        "game_name": "Genshin Impact",
+        "genre": "adventure"
+      }
+    ]
+  }
+}

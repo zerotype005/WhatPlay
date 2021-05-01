@@ -1,0 +1,19 @@
+{
+  "gamelists" : {
+    "action" : [ {
+      "game_name" : "gameaction1"
+    }, {
+      "game_name" : "gameaction2"
+    } ],
+    "adventure" : [ {
+      "game_name" : "gameadventure1"
+    }, {
+      "game_name" : "gameadventure2"
+    } ],
+    "story" : [ {
+      "game_name" : "gamestory1"
+    }, {
+      "game_name" : "gamestory2"
+    } ]
+  }
+}

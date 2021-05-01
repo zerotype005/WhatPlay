@@ -1,0 +1,25 @@
+body {
+    background-color: black;
+}
+
+.container {
+    background-color: white;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.content {
+    width: 200px;
+    height: 300px;
+}
+
+.content1 {
+    background-color: red;
+}
+
+.content2 {
+    background-color: yellow;
+}

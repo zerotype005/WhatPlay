@@ -20,9 +20,7 @@ function renderGame(doc) {
     genre.textContent = "genre : " + doc.action[0].genre;
     platform.textContent = "platform : " + doc.action[0].Platform;
     headtext2.textContent = "รายละเอียดของเกม";
-    desc.textContent = "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis sint officia est praesentium amet\
-    vero, recusandae rem commodi nisi nostrum et? Doloremque necessitatibus quo quod quisquam assumenda\
-    autem, beatae natus!";
+    desc.textContent = doc.action[0].desc;
     developer.textContent = "developer : " + doc.action[0].Developer;
     publisher.textContent = "publisher : " + doc.action[0].Publisher;
     

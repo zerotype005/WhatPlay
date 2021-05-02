@@ -10,6 +10,7 @@ let addGame = function () {
     var URLRefImage2 = document.getElementById("URLRefImage2").value;
     var Developer = document.getElementById("devoloper").value;
     var Publisher = document.getElementById("publisher").value;
+    var Urlstore = document.getElementById("urlstore").value;
 
     /* system requirement */
 
@@ -40,6 +41,7 @@ let addGame = function () {
         URLRef_Image2: URLRefImage2,
         Developer: Developer,
         Publisher: Publisher,
+        UrlStore: Urlstore,
         System_requirement: {
             minimum_requirement:
             {

@@ -20,6 +20,10 @@
         integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
         crossorigin="anonymous"></script>
 
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+
 
     <link rel="stylesheet" href="output-gamelist.css">
 
@@ -27,24 +31,83 @@
 
 <body>
 
-    <ul class="nav nav-tabs justify-content-center">
-        <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Active</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-        </li>
-    </ul>
-
-    
-    <div id="gameList">
-        
-        <!-- <div class="content">content1</div>
-        <div class="content">content2</div> -->
+    <div class="slider owl-carousel">
+        <div class="card">
+            <div class="img">
+                <img src="https://asia.playstation.com/content/dam/pscom/games/2017/assassins-creed-origins/assassins-creed-origins-mainvisual-sp.png"
+                    alt="">
+            </div>
+            <div class="content">
+                <div class="title">Heading 1</div>
+                <div class="sub-title">Heading 2</div>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae doloremque aliquid facilis sit facere
+                    totam fugiat architecto quibusdam maxime quis.</p>
+                <div class="btn">
+                    <button>Read more</button>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="img">
+                <img src="https://asia.playstation.com/content/dam/pscom/games/2017/assassins-creed-origins/assassins-creed-origins-mainvisual-sp.png"
+                    alt="">
+            </div>
+            <div class="content">
+                <div class="title">Heading 1</div>
+                <div class="sub-title">Heading 2</div>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae doloremque aliquid facilis sit facere
+                    totam fugiat architecto quibusdam maxime quis.</p>
+                <div class="btn">
+                    <button>Read more</button>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="img">
+                <img src="https://asia.playstation.com/content/dam/pscom/games/2017/assassins-creed-origins/assassins-creed-origins-mainvisual-sp.png"
+                    alt="">
+            </div>
+            <div class="content">
+                <div class="title">Heading 1</div>
+                <div class="sub-title">Heading 2</div>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae doloremque aliquid facilis sit facere
+                    totam fugiat architecto quibusdam maxime quis.</p>
+                <div class="btn">
+                    <button>Read more</button>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="img">
+                <img src="https://asia.playstation.com/content/dam/pscom/games/2017/assassins-creed-origins/assassins-creed-origins-mainvisual-sp.png"
+                    alt="">
+            </div>
+            <div class="content">
+                <div class="title">Heading 1</div>
+                <div class="sub-title">Heading 2</div>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae doloremque aliquid facilis sit facere
+                    totam fugiat architecto quibusdam maxime quis.</p>
+                <div class="btn">
+                    <button>Read more</button>
+                </div>
+            </div>
+        </div>
     </div>
+
+    <!-- <div id="gameList">
+        
+        <div class="content">content1</div>
+        <div class="content">content2</div>
+    </div> -->
+
+    <script>
+        $(".slider").owlCarousel({
+            loop: true,
+            autoplay: false,
+            autoplayTimeout: 5000,
+            autoplayHoverPause: true,
+        });
+    </script>
 
 
 </body>

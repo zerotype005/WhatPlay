@@ -1,11 +1,79 @@
+html,body{
+    display: grid;
+    height: 100%;
+    place-items: center;
+    text-align: center;
+    background: #f2f2f2;
+}
+
 #gameList {
     padding: 3rem;
     border-radius: 10px;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
 }
 
-.content {
-    padding: 3rem;
-    border-radius: 10px;
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+.slider{
+    max-width: 1150px;
+    display: flex;
+}
+
+.slider .card{
+    background: #fff;
+    flex: 1;
+    margin: 0 10px;
+    place-items: center;
+}
+
+.slider .card .img{
+    height: 200px;
+    width: 100px;
+}
+
+.slider .card .img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;  
+}
+
+.slider .card .content{
+    padding: 10px 20px;
+}
+
+.slider .card .title{
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.slider .card .sub-title{
+    font-size: 20px;
+    font-weight: 600;
+    color: #e74c3c;
+    line-height: 20px;
+}
+
+.card .content p{
+    text-align: justify;
+    margin: 10px 0;
+}
+
+.card .content .btn{
+    display: block;
+    text-align: left;
+    margin: 10px 0;
+}
+
+.card .content .btn button{
+    background: #e74c3c;
+    color: #fff;
+    border: none;
+    outline: none;
+    font-size: 17px;
+    padding: 5px 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.card .content .btn button:hover{
+    transform: scale(0.9);
 }

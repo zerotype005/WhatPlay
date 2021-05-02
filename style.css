@@ -17,7 +17,9 @@ body{
     text-align: center;
     width: 100%;
     min-height: 100vh;
-   
+}
+.content2{
+    background-color: #6f42c1
 }
 .scroll-down{
     height: 50px;

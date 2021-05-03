@@ -13,6 +13,13 @@ let desc = document.querySelector('#desc');
 let developer = document.querySelector('#developer');
 let publisher = document.querySelector('#publisher');
 let storelink = document.querySelector('#storelink');
+let image = document.querySelector('#image');
+
+
+var ph = document.createElement("img");
+ph.setAttribute("alt", "Nice Photo");
+
+image.appendChild(ph);
 
 
 function renderGame(doc) {
@@ -23,6 +30,9 @@ function renderGame(doc) {
     desc.textContent = doc.action[0].desc;
     developer.textContent = "developer : " + doc.action[0].Developer;
     publisher.textContent = "publisher : " + doc.action[0].Publisher;
+    ph.setAttribute("src",  String(doc.action[0].URL_img));
+
+
     
     /* for (let i = 0; i < doc.action.length; i++) {
         let li = document.createElement('li');

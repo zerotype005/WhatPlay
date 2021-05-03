@@ -14,6 +14,7 @@ body{
 .logo{
     width:50px; 
     height:60px;
+    margin: 20px 0px 0px 20px;
 }
 /* #content1 {
 	background: url("/image/bg_home.png") no-repeat center center;

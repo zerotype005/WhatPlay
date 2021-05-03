@@ -5,15 +5,17 @@ dbRef.on('value', (snapshot) => {
     showaction_pc(data);
 });
 
-let div_container = document.querySelector(".container-fluid");
+var div_container = document.querySelector('.container-fluid');
 
 function showaction_pc(doc){
     let div_headtext = document.createElement('div');
-    div_headtext.classList.add('headtext display-3');
+    div_headtext.classList.add('headtext');
+    div_headtext.classList.add('display-3');
     div_headtext.textContent = "PC";
 
     let div_slider = document.createElement('div');
-    div_slider.classList.add('slider owl-carousel');
+    div_slider.classList.add('slider');
+    div_slider.classList.add('owl-carousel');
 
     for (let i = 0;i < doc.action.length; i++) {
         let div_card = document.createElement('div');

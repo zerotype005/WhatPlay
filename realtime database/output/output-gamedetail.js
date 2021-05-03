@@ -29,7 +29,7 @@ function renderGame(doc) {
     headtext2.textContent = "รายละเอียดของเกม";
     desc.textContent = doc.action[0].desc;
     developer.textContent = "developer : " + doc.action[0].Developer;
-    publisher.textContent = "publisher : " + doc.action[0].Publisher;
+    publisher.textContent = "publisher :  " + doc.action[0].Publisher;
     ph.setAttribute("src",  String(doc.action[0].URL_img));
 
 

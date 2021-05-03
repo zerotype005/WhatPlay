@@ -9,6 +9,7 @@ body {
     height: 100vh;
     align-items: flex-start;
     justify-content: center;
+    
 }
 
 .content {
@@ -26,4 +27,7 @@ body {
 img{
     width: 250px;
     height: 250px;
+}
+.box{
+    display: flex;
 }

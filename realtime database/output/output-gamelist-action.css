@@ -12,7 +12,7 @@
     border-color: #dee2e6 #dee2e6 #fff;
 }
 
-.container {
+.container-fluid {
     display: flex;
     height: 100%;
     place-items: center;
@@ -35,7 +35,7 @@
 .slider .card {
     background: #fff;
     flex: 1;
-    margin: 0 0px;
+    margin: 0 10px;
     place-items: center;
 }
 
@@ -104,13 +104,14 @@
         flex: 1;
         margin: 0 0px;
         place-items: center;
+        height: 400px;
     }
     .slider .card .title {
-        font-size: 25px;
+        font-size: 22px;
         font-weight: 600;
     }
     .slider .card .sub-title {
-        font-size: 20px;
+        font-size: 18px;
         font-weight: 600;
         color: #e74c3c;
         line-height: 20px;
@@ -136,4 +137,8 @@
         cursor: pointer;
         transition: 0.2s;
     }
+}
+
+@media all and (max-width: 577px) {
+    
 }

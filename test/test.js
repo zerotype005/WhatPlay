@@ -4,7 +4,7 @@ dbRef.on('value', (snapshot) => {
     renderGame(data);
 });
 
-let gameList = document.querySelector('#gameList');
+let gameList = document.querySelector('.gameList');
 
 function renderGame(doc) {
     for (let i = 0; i < doc.action.length; i++) {

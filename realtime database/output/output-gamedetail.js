@@ -15,6 +15,12 @@ let publisher = document.querySelector('#publisher');
 let storelink = document.querySelector('#storelink');
 let image = document.querySelector('#image');
 
+let cpu = document.querySelector('#CPU');
+let gpu = document.querySelector('#GPU');
+let capacity = document.querySelector('#Capacity');
+let os = document.querySelector('#OS');
+let ram = document.querySelector('#RAM');
+
 
 var ph = document.createElement("img");
 ph.setAttribute("alt", "Nice Photo");
@@ -31,7 +37,7 @@ function renderGame(doc) {
     developer.textContent = "developer : " + doc.action[0].Developer;
     publisher.textContent = "publisher :  " + doc.action[0].Publisher;
     ph.setAttribute("src",  String(doc.action[0].URL_img));
-
+    cpu.textContent = "CPU : " + doc.action[0].recommended_requirement.CPU;
 
     
     /* for (let i = 0; i < doc.action.length; i++) {

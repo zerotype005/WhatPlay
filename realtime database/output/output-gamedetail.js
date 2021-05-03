@@ -37,7 +37,11 @@ function renderGame(doc) {
     developer.textContent = "developer : " + doc.action[0].Developer;
     publisher.textContent = "publisher :  " + doc.action[0].Publisher;
     ph.setAttribute("src",  String(doc.action[0].URL_img));
-    cpu.textContent = "CPU : " + doc.action[0].recommended_requirement.CPU;
+    cpu.textContent = "CPU : " + doc.action[0].System_requirement.recommended_requirement.CPU;
+    gpu.textContent = "GPU : " + doc.action[0].System_requirement.recommended_requirement.GPU;
+    capacity.textContent = "Capacity : " + doc.action[0].System_requirement.recommended_requirement.Capacity;
+    os.textContent = "OS : " + doc.action[0].System_requirement.recommended_requirement.OS;
+    ram.textContent = "RAM : " + doc.action[0].System_requirement.recommended_requirement.RAM;
 
     
     /* for (let i = 0; i < doc.action.length; i++) {

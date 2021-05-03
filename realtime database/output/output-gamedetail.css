@@ -8,7 +8,9 @@ body {
     width: 100vw;
     height: 100vh;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: space-around
+
+
     
 }
 
@@ -23,6 +25,9 @@ body {
 
 .content2 {
     background-color: yellow;
+}
+.content3 {
+    background-color: blue;
 }
 img{
     width: 250px;

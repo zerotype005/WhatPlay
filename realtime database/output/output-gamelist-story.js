@@ -45,12 +45,11 @@ function showstory_pc(doc) {
             div_btn.classList.add('btn');
 
             let button = document.createElement('button');
-            button.id = i;
             button.classList.add('story');
             button.onclick = function() {showgame(this.id)};
             button.addEventListener("click", function() {
-                window.location.href = "output-gamedetail.html";
-                localStorage.setItem("id", button.id);
+                window.location.href = "output-gamedetail-story.html";
+                localStorage.setItem("id3", button.id);
             });
             button.textContent = "Read more";
 
@@ -70,10 +69,10 @@ function showstory_pc(doc) {
 
     div_container.appendChild(div_headtext);
     div_container.appendChild(div_slider);
-        
+
     $(".slider").owlCarousel({
         loop: true,
-        autoplay: false,
+        autoplay: true,
         autoplayTimeout: 5000,
         autoplayHoverPause: true,
     });
@@ -115,8 +114,12 @@ function showstory_playstation(doc) {
             div_btn.classList.add('btn');
 
             let button = document.createElement('button');
-            button.id = i;
             button.classList.add('story');
+            button.onclick = function() {showgame(this.id)};
+            button.addEventListener("click", function() {
+                window.location.href = "output-gamedetail-story.html";
+                localStorage.setItem("id3", button.id);
+            });
             button.textContent = "Read more";
 
             div_btn.appendChild(button);
@@ -138,7 +141,7 @@ function showstory_playstation(doc) {
 
     $(".slider").owlCarousel({
         loop: true,
-        autoplay: false,
+        autoplay: true,
         autoplayTimeout: 5000,
         autoplayHoverPause: true,
     });
@@ -180,8 +183,12 @@ function showstory_Nintendo(doc) {
             div_btn.classList.add('btn');
 
             let button = document.createElement('button');
-            button.id = i;
             button.classList.add('story');
+            button.onclick = function() {showgame(this.id)};
+            button.addEventListener("click", function() {
+                window.location.href = "output-gamedetail-story.html";
+                localStorage.setItem("id3", button.id);
+            });
             button.textContent = "Read more";
 
             div_btn.appendChild(button);
@@ -207,30 +214,6 @@ function showstory_Nintendo(doc) {
         autoplayTimeout: 5000,
         autoplayHoverPause: true,
     });
-}
-
-function renderGame(id,doc) {
-    document.getElementById('headtext1').textContent = doc.story[id].game_name;
-    
-    let imgtag = document.createElement('img');
-    imgtag.src = doc.story[id].URL_img;
-    document.getElementById('image').appendChild(imgtag);
-
-    document.getElementById('genre').textContent = "genre : " + doc.story[id].genre;
-    document.getElementById('platform').textContent = "platform : " + doc.story[id].Platform;
-    document.getElementById('headtext2').textContent = "รายละเอียดของเกม";
-    document.getElementById('desc').textContent = doc.story[id].desc;
-    document.getElementById('developer').textContent = "developer :" + doc.story[id].Developer;
-    document.getElementById('publisher').textContent = "publisher :" + doc.story[id].Developer;
-    document.getElementById('storelink').textContent = "storelink :" + doc.story[id].Developer;
-
-    // recommended_requirement
-    document.getElementById('CPU').textContent = "CPU :" + doc.story[id].System_requirement.minimum_requirement.CPU;
-    document.getElementById('Capacity').textContent = "Capacity :" + doc.story[id].System_requirement.minimum_requirement.Capacity;
-    document.getElementById('GPU').textContent = "GPU :" + doc.story[id].System_requirement.minimum_requirement.GPU;
-    document.getElementById('OS').textContent = "OS :" + doc.story[id].System_requirement.minimum_requirement.OS;
-    document.getElementById('RAM').textContent = "RAM :" + doc.story[id].System_requirement.minimum_requirement.RAM;
-
 }
 
 /* function renderGame(doc) {

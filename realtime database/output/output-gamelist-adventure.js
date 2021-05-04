@@ -49,8 +49,8 @@ function showadventure_pc(doc) {
             button.classList.add('adventure');
             button.onclick = function() {showgame(this.id)};
             button.addEventListener("click", function() {
-                window.location.href = "output-gamedetail.html";
-                localStorage.setItem("id", button.id);
+                window.location.href = "output-gamedetail-adventure.html";
+                localStorage.setItem("id2", button.id);
             });
             button.textContent = "Read more";
 
@@ -119,8 +119,8 @@ function showadventure_playstation(doc) {
             button.classList.add('adventure');
             button.onclick = function() {showgame(this.id)};
             button.addEventListener("click", function() {
-                window.location.href = "output-gamedetail.html";
-                localStorage.setItem("id", button.id);
+                window.location.href = "output-gamedetail-adventure.html";
+                localStorage.setItem("id2", button.id);
             });
             button.textContent = "Read more";
 
@@ -189,8 +189,8 @@ function showadventure_Nintendo(doc) {
             button.classList.add('adventure');
             button.onclick = function() {showgame(this.id)};
             button.addEventListener("click", function() {
-                window.location.href = "output-gamedetail.html";
-                localStorage.setItem("id", button.id);
+                window.location.href = "output-gamedetail-adventure.html";
+                localStorage.setItem("id2", button.id);
             });
             button.textContent = "Read more";
 

@@ -16,6 +16,8 @@ let developer = document.querySelector('#developer');
 let publisher = document.querySelector('#publisher');
 let storelink = document.querySelector('#storelink');
 let image = document.querySelector('#image');
+let imgref = document.querySelector('#myImg');
+let imgref2 = document.querySelector('#myImg2');
 
 let cpu = document.querySelector('#CPU');
 let gpu = document.querySelector('#GPU');
@@ -25,9 +27,15 @@ let ram = document.querySelector('#RAM');
 
 
 var ph = document.createElement("img");
+var ph2 = document.createElement("img");
+var ph3 = document.createElement("img");
+ph3.setAttribute("width", "600");
+ph2.setAttribute("width", "600");
 ph.setAttribute("alt", "Nice Photo");
 
 image.appendChild(ph);
+imgref.appendChild(ph2)
+imgref2.appendChild(ph3)
 
 
 function renderGame(doc) {
@@ -39,6 +47,8 @@ function renderGame(doc) {
     developer.textContent = "developer : " + doc.adventure[idgame].Developer;
     publisher.textContent = "publisher :  " + doc.adventure[idgame].Publisher;
     ph.setAttribute("src",  String(doc.adventure[idgame].URL_img));
+    ph2.setAttribute("src",  String(doc.action[idgame].URLRef_Image));
+    ph3.setAttribute("src",  String(doc.action[idgame].URLRef_Image2));
     cpu.textContent = "CPU : " + doc.adventure[idgame].System_requirement.recommended_requirement.CPU;
     gpu.textContent = "GPU : " + doc.adventure[idgame].System_requirement.recommended_requirement.GPU;
     os.textContent = "OS : " + doc.adventure[idgame].System_requirement.recommended_requirement.OS;

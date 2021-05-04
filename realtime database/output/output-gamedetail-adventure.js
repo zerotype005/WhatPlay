@@ -18,7 +18,7 @@ let storelink = document.querySelector('#storelink');
 let image = document.querySelector('#image');
 let imgref = document.querySelector('#myImg');
 let imgref2 = document.querySelector('#myImg2');
-let vd = document.querySelector('#video');
+let video = document.querySelector('#video');
 
 
 let cpu = document.querySelector('#CPU');
@@ -31,8 +31,6 @@ let ram = document.querySelector('#RAM');
 var ph = document.createElement("img");
 var ph2 = document.createElement("img");
 var ph3 = document.createElement("img");
-var video = document.getElementById('video');
-var source = document.createElement('source');
 
 
 
@@ -54,10 +52,12 @@ function renderGame(doc) {
     developer.textContent = "developer : " + doc.adventure[idgame].Developer;
     publisher.textContent = "publisher :  " + doc.adventure[idgame].Publisher;
     ph.setAttribute("src",  String(doc.adventure[idgame].URL_img));
-    source.setAttribute('src', String(doc.adventure[idgame].URL_video));
+    
 
     ph2.setAttribute("src",  String(doc.adventure[idgame].URLRef_Image));
     ph3.setAttribute("src",  String(doc.adventure[idgame].URLRef_Image2));
+    video.setAttribute("href",  String(doc.adventure[idgame].URL_video));
+
     
     /* for (let i = 0; i < doc.action.length; i++) {
         let li = document.createElement('li');

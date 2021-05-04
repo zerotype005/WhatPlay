@@ -26,7 +26,7 @@
 
 </head>
 <style>
-    img{
+    img {
         margin-left: auto;
     }
 </style>
@@ -69,8 +69,10 @@
 
     <div class="container">
         <div class="row">
-            <div id="blog" class="col">
-                <h1 id="headtext1"></h1>
+            <div id="blog" class="col ">
+                <b>
+                    <h1 id="headtext1"></h1>
+                </b>
                 <div id="image"></div>
                 <div id="genre"> </div>
                 <div id="platform"></div>
@@ -85,30 +87,42 @@
                 <div id="storelink"></div>
             </div>
         </div>
+        <div class="store col-sm-12 col-lg-12">
+            <button><i class="fa store"><a id="storelink" href="">Store</a>
+                </i>
+            </button>
+        </div>
     </div>
+    <div class="container">
+        
+    </div>
+
     <!-- ----------------------------------------------------------- -->
     <div class="container">
         <div class="row">
             <div class="col-sm-6 col-lg-4">
                 <div class="gallery" id="myImg">
-                    <div class="desc">Title<br>
-                        Detail</div>
+                    <div class="desc">
+                        <!-- Title<br>
+                        Detail -->
+                    </div>
 
                 </div>
             </div>
             <div class="col-sm-6 col-lg-4">
                 <div class="gallery" id="myImg2">
-                    <div class="desc">Title<br>
-                        Detail</div>
-
-                        
+                    <div class="desc">
+                        <!-- Title<br>
+                        Detail -->
+                    </div>
                 </div>
             </div>
 
+
             <div class="col-sm-6 col-lg-4">
 
-                <button><i class="fa fa-search"><a  id="video" href="">link text</a>
-                </i>
+                <button><i class="fa fa-search"><a id="video" href="">Video Demo</a>
+                    </i>
                 </button>
 
 
@@ -117,22 +131,29 @@
     </div>
     <div class="container">
         <div class="row">
-            <div>System_requirement</div>
+            <h2 class="system1"><b>System_Requirement</b> </h2>
+            <div class="col-12 col-sm-6">
+                <div class="min_system"><b>Minimum_Requirement</b></div>
+                <div id="blog" class="col">
+                    <div id="cpu"></div>
+                    <div id="cap"></div>
+                    <div id="gpu"></div>
+                    <div id="os"></div>
+                    <div id="ram"></div>
+                </div>
+            </div>
 
-            <div id="blog" class="col">
-                <div id="cpu"></div>
-                <div id="cap"></div>
-                <div id="gpu"></div>
-                <div id="os"></div>
-                <div id="ram"></div>
+            <div class="col-12 col-sm-6">
+                <div class="reg_system"><b> Recommended_Requirement</b></div>
+                <div id="blog" class="col">
+                    <div id="cpu_m"></div>
+                    <div id="cap_m"></div>
+                    <div id="gpu_m"></div>
+                    <div id="os_m"></div>
+                    <div id="ram_m"></div>
+                </div>
             </div>
-            <div id="blog" class="col">
-                <div id="cpu_m"></div>
-                <div id="cap_m"></div>
-                <div id="gpu_m"></div>
-                <div id="os_m"></div>
-                <div id="ram_m"></div>
-            </div>
+
         </div>
     </div>
 
@@ -142,7 +163,7 @@
             <div id="loaderText">Loading ... </div>
         </div>
     </div>
-    
+
     <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-app.js"></script>
 

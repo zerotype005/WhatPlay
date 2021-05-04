@@ -32,12 +32,12 @@ image.appendChild(ph);
 
 function renderGame(doc) {
     headtext1.textContent = doc.story[idgame].game_name;
-    genre.textContent = "genre : " + doc.story[idgame].genre;
-    platform.textContent = "platform : " + doc.story[idgame].Platform;
+    genre.textContent = "Genre : " + doc.story[idgame].genre;
+    platform.textContent = "Platform : " + doc.story[idgame].Platform;
     headtext2.textContent = "รายละเอียดของเกม";
     desc.textContent = doc.story[idgame].desc;
-    developer.textContent = "developer : " + doc.story[idgame].Developer;
-    publisher.textContent = "publisher :  " + doc.story[idgame].Publisher;
+    developer.textContent = "Developer : " + doc.story[idgame].Developer;
+    publisher.textContent = "Publisher :  " + doc.story[idgame].Publisher;
     ph.setAttribute("src",  String(doc.story[idgame].URL_img));
     cpu.textContent = "CPU : " + doc.story[idgame].System_requirement.recommended_requirement.CPU;
     gpu.textContent = "GPU : " + doc.story[idgame].System_requirement.recommended_requirement.GPU;

@@ -51,12 +51,12 @@ imgref2.appendChild(ph3)
 
 function renderGame(doc) {
     headtext1.textContent = doc.adventure[idgame].game_name;
-    genre.textContent = "genre : " + doc.adventure[idgame].genre;
-    platform.textContent = "platform : " + doc.adventure[idgame].Platform;
+    genre.textContent = "Genre : " + doc.adventure[idgame].genre;
+    platform.textContent = "Platform : " + doc.adventure[idgame].Platform;
     headtext2.textContent = "รายละเอียดของเกม";
     desc.textContent = doc.adventure[idgame].desc;
-    developer.textContent = "developer : " + doc.adventure[idgame].Developer;
-    publisher.textContent = "publisher :  " + doc.adventure[idgame].Publisher;
+    developer.textContent = "Developer : " + doc.adventure[idgame].Developer;
+    publisher.textContent = "Publisher :  " + doc.adventure[idgame].Publisher;
     cpu.textContent = "CPU : " + doc.adventure[idgame].System_requirement.recommended_requirement.CPU
     gpu.textContent = "GPU : " + doc.adventure[idgame].System_requirement.recommended_requirement.GPU
     cap.textContent = "Capacity : " + doc.adventure[idgame].System_requirement.recommended_requirement.Capacity

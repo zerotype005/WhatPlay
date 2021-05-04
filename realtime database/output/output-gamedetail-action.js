@@ -53,12 +53,12 @@ imgref2.appendChild(ph3)
 
 function renderGame(doc) {
     headtext1.textContent = doc.action[idgame].game_name;
-    genre.textContent = "genre : " + doc.action[idgame].genre;
-    platform.textContent = "platform : " + doc.action[idgame].Platform;
+    genre.textContent = "Genre : " + doc.action[idgame].genre;
+    platform.textContent = "Platform : " + doc.action[idgame].Platform;
     headtext2.textContent = "รายละเอียดของเกม";
     desc.textContent = doc.action[idgame].desc;
-    developer.textContent = "developer : " + doc.action[idgame].Developer;
-    publisher.textContent = "publisher :  " + doc.action[idgame].Publisher;
+    developer.textContent = "Developer : " + doc.action[idgame].Developer;
+    publisher.textContent = "Publisher :  " + doc.action[idgame].Publisher;
     ph.setAttribute("src",  String(doc.action[idgame].URL_img));
     ph2.setAttribute("src",  String(doc.action[idgame].URLRef_Image));
     ph3.setAttribute("src",  String(doc.action[idgame].URLRef_Image2));

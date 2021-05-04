@@ -2,10 +2,11 @@ body {
   /* background-color: rgb(255, 255, 255); */
   background-image: url("../img/bg-detail.jpg");
   /* Full height */
-  height: 190vh;
+  height: 230vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  
 }
 
 /* .container {
@@ -24,6 +25,10 @@ div#genre{
 #headtext1{
   font-size: 30px;
 }
+.pic{
+  margin-top: 200px;
+  margin-bottom: 120px;
+}
 /* .content {
     width: 200px;
     height: 300px;
@@ -40,13 +45,28 @@ div#genre{
 .content3 {
     background-color: blue;
 } */
+#headtext1{
+  font-size: 35px;
+}
+#headtext2{
+  font-size: 35px;
+}
+#genre{
+  font-size: 18px;
+}
+#platform{
+  font-size: 18px;
+}
+#publisher{
+  margin-top: 20px;
 
+}
 .store{
   text-align: center;
 }
 img {
   width: 250px;
-  height: 250px;
+  height: 350px;
 }
 
 .box {
@@ -61,13 +81,21 @@ img {
   text-align: left;
   width: 100%;
   margin: 5px;
+  font-size: 18px;
 }
 
 #experience {
   text-align: left;
   width: 100%;
   margin-top: 50px;
+  font-size: 18px;
   
+}
+.min_system{
+  font-size: 18px;
+}
+.reg_system{
+  font-size: 18px;
 }
 
 div.gallery {
@@ -150,13 +178,27 @@ div.gallery img {
       font-size: 25px;
     }
     #experience{
-      margin-top: 30px;
+      margin-top: 25px;
+      font-size: 18px;
     }
+    #developer{
+      font-size: 18px;
+    }
+    #publisher{
+      margin-top: 10px;
+      font-size: 18px;
+    }
+    .pic{
+      margin-top: 120px;
+    }
+    body {
+      height: 230vh;
+      }
 
 }
 @media screen and (max-width: 576px) {
   #headtext1{
-    font-size: 20px;
+    font-size: 24px;
   }
   #headtext2{
     font-size: 25px;
@@ -164,11 +206,37 @@ div.gallery img {
   #experience{
     margin-top: 30px;
   }
+  #developer{
+    font-size: 16px;
+  }
+  #publisher{
+    margin-top: 10px;
+    font-size: 16px;
+  }
   #desc{
-    
+    font-size: 16px;
+  }
+  .pic{
+    margin-top: 60px;
   }
   img {
     width: 200px;
-    height: 200px;
+    height: 280px;
+  }
+  .system1{
+    font-size: 24px;
+  }
+  .min_system{
+    font-size: 16px;
+  }
+  .reg_system{
+    margin-top: 20px;
+    font-size: 16px;
+  }
+  #blog{
+    font-size: 16px;
+  }
+  body {
+  height: 330vh;
   }
 }

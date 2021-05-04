@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Learn firebase</title>
+    <title>Detail</title>
 
     <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
@@ -18,30 +18,92 @@
 <body>
 
     <div class="container">
-        <div class="content content1">
-            <h1 id="headtext1"></h1>
-            <div id="image">
+        <div class="row">
+            <div id="blog" class="col">
+                <b>
+                    <h1 id="headtext1"></h1>
+                </b>
+                <div id="image"></div>
+                <div id="genre"> </div>
+                <div id="platform"></div>
+            </div>
+            <div id="experience" class="col">
+                <h2 id="headtext2"></h2>
+                <div id="desc">
+
+                </div>
+                <div id="developer"></div>
+                <div id="publisher"></div>
+                <div id="storelink"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="store col-sm-12 col-lg-12">
+                <button type="button" class="btn btn-light "><a id="storelink" href="">Store</a></button>
+                <!-- <button><i class="fa store">
+                    </i>
+                </button> -->
+            </div>
+        </div>
+
+    </div>
+
+    <!-- ----------------------------------------------------------- -->
+    <div class="container pic">
+        <div class="row">
+            <div class="col-sm-6 col-lg-4">
+                <div class="gallery" id="myImg">
+                    <div class="desc">
+                        <!-- Title<br>
+                        Detail -->
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+                <div class="gallery" id="myImg2">
+                    <div class="desc">
+                        <!-- Title<br>
+                        Detail -->
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-sm-6 col-lg-4">
+
+                <button><i class="fa fa-search"><a id="video" href="">Video Demo</a>
+                    </i>
+                </button>
+
 
             </div>
-            <div id="genre"> </div>
-            <div id="platform"></div>
         </div>
-        <div class="content content2">
-            <h2 id="headtext2"></h2>
-            <div id="desc">
-
+    </div>
+    <div class="container">
+        <div class="row">
+            <h2 class="system1"><b>System_Requirement</b> </h2>
+            <div class="col-12 col-sm-6">
+                <div class="min_system"><b>Minimum_Requirement</b></div>
+                <div id="blog" class="col">
+                    <div id="cpu"></div>
+                    <div id="cap"></div>
+                    <div id="gpu"></div>
+                    <div id="os"></div>
+                    <div id="ram"></div>
+                </div>
             </div>
-            <div id="developer"></div>
-            <div id="publisher"></div>
-            <div id="storelink"></div>
-        </div>
-        <div class="content content3">
-            <h2>minimum_requirement</h2>
-            <div id="CPU"></div>
-            <div id="Capacity"></div>
-            <div id="GPU"></div>
-            <div id="OS"></div>
-            <div id="RAM"></div>
+
+            <div class="col-12 col-sm-6">
+                <div class="reg_system"><b> Recommended_Requirement</b></div>
+                <div id="blog" class="col">
+                    <div id="cpu_m"></div>
+                    <div id="cap_m"></div>
+                    <div id="gpu_m"></div>
+                    <div id="os_m"></div>
+                    <div id="ram_m"></div>
+                </div>
+            </div>
 
         </div>
     </div>

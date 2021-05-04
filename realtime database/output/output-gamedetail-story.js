@@ -57,3 +57,11 @@ function renderGame(doc) {
         gameList.appendChild(li);
     } */
 }
+window.addEventListener("load", function () {
+    var loading = document.getElementById("loading");
+    loading.style.opacity = 0;
+    setTimeout(destroyLoading, 1000);
+    function destroyLoading(params) {
+        document.body.removeChild(loading);
+    }
+});

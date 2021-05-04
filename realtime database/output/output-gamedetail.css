@@ -5,8 +5,7 @@ body {
 .container {
     background-color: rgb(250, 215, 215);
     display: flex;
-    width: 100vw;
-    height: 100vh;
+    
     align-items: flex-start;
     justify-content: space-around
 }

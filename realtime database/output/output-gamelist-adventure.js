@@ -2,14 +2,14 @@ var dbRef = firebase.database().ref('gamelists');
 dbRef.on('value', (snapshot) => {
     const data = snapshot.val();
     // renderGame(data);
-    showaction_pc(data);
-    showaction_playstation(data);
-    showaction_Nintendo(data);
+    showadventure_pc(data);
+    showadventure_playstation(data);
+    showadventure_Nintendo(data);
 });
 
 var div_container = document.querySelector('.container-fluid');
 
-function showaction_pc(doc) {
+function showadventure_pc(doc) {
     let div_headtext = document.createElement('div');
     div_headtext.classList.add('headtext');
     div_headtext.classList.add('display-3');
@@ -19,15 +19,15 @@ function showaction_pc(doc) {
     div_slider.classList.add('slider');
     div_slider.classList.add('owl-carousel');
 
-    for (let i = 0; i < doc.action.length; i++) {
-        if (doc.action[i].Platform == "PC") {
+    for (let i = 0; i < doc.adventure.length; i++) {
+        if (doc.adventure[i].Platform == "PC") {
             let div_card = document.createElement('div');
             div_card.classList.add('card');
 
             let div_img = document.createElement('div');
             div_img.classList.add('img');
             let img_tag = document.createElement('img');
-            img_tag.src = doc.action[i].URL_img;
+            img_tag.src = doc.adventure[i].URL_img;
             div_img.appendChild(img_tag);
 
             let div_content = document.createElement('div');
@@ -35,18 +35,18 @@ function showaction_pc(doc) {
 
             let div_title = document.createElement('div');
             div_title.classList.add('title');
-            div_title.textContent = doc.action[i].game_name;
+            div_title.textContent = doc.adventure[i].game_name;
 
             let div_subtitle = document.createElement('div');
             div_subtitle.classList.add('sub-title');
-            div_subtitle.textContent = doc.action[i].Publisher;
+            div_subtitle.textContent = doc.adventure[i].Publisher;
 
             let div_btn = document.createElement('div');
             div_btn.classList.add('btn');
 
             let button = document.createElement('button');
             button.id = i;
-            button.classList.add('action');
+            button.classList.add('adventure');
             button.onclick = function() {showgame(this.id)};
             button.addEventListener("click", function() {
                 window.location.href = "output-gamedetail.html";
@@ -79,7 +79,7 @@ function showaction_pc(doc) {
     });
 }
 
-function showaction_playstation(doc) {
+function showadventure_playstation(doc) {
     let div_headtext = document.createElement('div');
     div_headtext.classList.add('headtext');
     div_headtext.classList.add('display-3');
@@ -89,15 +89,15 @@ function showaction_playstation(doc) {
     div_slider.classList.add('slider');
     div_slider.classList.add('owl-carousel');
 
-    for (let i = 0; i < doc.action.length; i++) {
-        if (doc.action[i].Platform == "Playstation") {
+    for (let i = 0; i < doc.adventure.length; i++) {
+        if (doc.adventure[i].Platform == "Playstation") {
             let div_card = document.createElement('div');
             div_card.classList.add('card');
 
             let div_img = document.createElement('div');
             div_img.classList.add('img');
             let img_tag = document.createElement('img');
-            img_tag.src = doc.action[i].URL_img;
+            img_tag.src = doc.adventure[i].URL_img;
             div_img.appendChild(img_tag);
 
             let div_content = document.createElement('div');
@@ -105,18 +105,18 @@ function showaction_playstation(doc) {
 
             let div_title = document.createElement('div');
             div_title.classList.add('title');
-            div_title.textContent = doc.action[i].game_name;
+            div_title.textContent = doc.adventure[i].game_name;
 
             let div_subtitle = document.createElement('div');
             div_subtitle.classList.add('sub-title');
-            div_subtitle.textContent = doc.action[i].Publisher;
+            div_subtitle.textContent = doc.adventure[i].Publisher;
 
             let div_btn = document.createElement('div');
             div_btn.classList.add('btn');
 
             let button = document.createElement('button');
             button.id = i;
-            button.classList.add('action');
+            button.classList.add('adventure');
             button.textContent = "Read more";
 
             div_btn.appendChild(button);
@@ -144,7 +144,7 @@ function showaction_playstation(doc) {
     });
 }
 
-function showaction_Nintendo(doc) {
+function showadventure_Nintendo(doc) {
     let div_headtext = document.createElement('div');
     div_headtext.classList.add('headtext');
     div_headtext.classList.add('display-3');
@@ -154,15 +154,15 @@ function showaction_Nintendo(doc) {
     div_slider.classList.add('slider');
     div_slider.classList.add('owl-carousel');
 
-    for (let i = 0; i < doc.action.length; i++) {
-        if (doc.action[i].Platform == "Nintendo") {
+    for (let i = 0; i < doc.adventure.length; i++) {
+        if (doc.adventure[i].Platform == "Nintendo") {
             let div_card = document.createElement('div');
             div_card.classList.add('card');
 
             let div_img = document.createElement('div');
             div_img.classList.add('img');
             let img_tag = document.createElement('img');
-            img_tag.src = doc.action[i].URL_img;
+            img_tag.src = doc.adventure[i].URL_img;
             div_img.appendChild(img_tag);
 
             let div_content = document.createElement('div');
@@ -170,18 +170,18 @@ function showaction_Nintendo(doc) {
 
             let div_title = document.createElement('div');
             div_title.classList.add('title');
-            div_title.textContent = doc.action[i].game_name;
+            div_title.textContent = doc.adventure[i].game_name;
 
             let div_subtitle = document.createElement('div');
             div_subtitle.classList.add('sub-title');
-            div_subtitle.textContent = doc.action[i].Publisher;
+            div_subtitle.textContent = doc.adventure[i].Publisher;
 
             let div_btn = document.createElement('div');
             div_btn.classList.add('btn');
 
             let button = document.createElement('button');
             button.id = i;
-            button.classList.add('action');
+            button.classList.add('adventure');
             button.textContent = "Read more";
 
             div_btn.appendChild(button);
@@ -210,31 +210,31 @@ function showaction_Nintendo(doc) {
 }
 
 function renderGame(id,doc) {
-    document.getElementById('headtext1').textContent = doc.action[id].game_name;
+    document.getElementById('headtext1').textContent = doc.adventure[id].game_name;
     
     let imgtag = document.createElement('img');
-    imgtag.src = doc.action[id].URL_img;
+    imgtag.src = doc.adventure[id].URL_img;
     document.getElementById('image').appendChild(imgtag);
 
-    document.getElementById('genre').textContent = "genre : " + doc.action[id].genre;
-    document.getElementById('platform').textContent = "platform : " + doc.action[id].Platform;
+    document.getElementById('genre').textContent = "genre : " + doc.adventure[id].genre;
+    document.getElementById('platform').textContent = "platform : " + doc.adventure[id].Platform;
     document.getElementById('headtext2').textContent = "รายละเอียดของเกม";
-    document.getElementById('desc').textContent = doc.action[id].desc;
-    document.getElementById('developer').textContent = "developer :" + doc.action[id].Developer;
-    document.getElementById('publisher').textContent = "publisher :" + doc.action[id].Developer;
-    document.getElementById('storelink').textContent = "storelink :" + doc.action[id].Developer;
+    document.getElementById('desc').textContent = doc.adventure[id].desc;
+    document.getElementById('developer').textContent = "developer :" + doc.adventure[id].Developer;
+    document.getElementById('publisher').textContent = "publisher :" + doc.adventure[id].Developer;
+    document.getElementById('storelink').textContent = "storelink :" + doc.adventure[id].Developer;
 
     // recommended_requirement
-    document.getElementById('CPU').textContent = "CPU :" + doc.action[id].System_requirement.minimum_requirement.CPU;
-    document.getElementById('Capacity').textContent = "Capacity :" + doc.action[id].System_requirement.minimum_requirement.Capacity;
-    document.getElementById('GPU').textContent = "GPU :" + doc.action[id].System_requirement.minimum_requirement.GPU;
-    document.getElementById('OS').textContent = "OS :" + doc.action[id].System_requirement.minimum_requirement.OS;
-    document.getElementById('RAM').textContent = "RAM :" + doc.action[id].System_requirement.minimum_requirement.RAM;
+    document.getElementById('CPU').textContent = "CPU :" + doc.adventure[id].System_requirement.minimum_requirement.CPU;
+    document.getElementById('Capacity').textContent = "Capacity :" + doc.adventure[id].System_requirement.minimum_requirement.Capacity;
+    document.getElementById('GPU').textContent = "GPU :" + doc.adventure[id].System_requirement.minimum_requirement.GPU;
+    document.getElementById('OS').textContent = "OS :" + doc.adventure[id].System_requirement.minimum_requirement.OS;
+    document.getElementById('RAM').textContent = "RAM :" + doc.adventure[id].System_requirement.minimum_requirement.RAM;
 
 }
 
 /* function renderGame(doc) {
-    for (let i = 0; i < doc.action.length; i++) {
+    for (let i = 0; i < doc.adventure.length; i++) {
         let divcontent = document.createElement('div');
         divcontent.classList.add('content');
         let btnlink = document.createElement('button');
@@ -244,7 +244,7 @@ function renderGame(id,doc) {
             window.open("output-gamedetail.html");
         });
 
-        divcontent.textContent = doc.action[i].game_name;
+        divcontent.textContent = doc.adventure[i].game_name;
 
         divcontent.appendChild(btnlink)
 

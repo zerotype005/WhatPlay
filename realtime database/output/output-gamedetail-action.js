@@ -17,13 +17,19 @@ let publisher = document.querySelector('#publisher');
 let storelink = document.querySelector('#storelink');
 let image = document.querySelector('#image');
 let video = document.querySelector('#video');
+let cpu = document.querySelector('#cpu');
+let gpu = document.querySelector('#gpu');
+let ram = document.querySelector('#ram');
+let os = document.querySelector('#os');
+let cpu_m = document.querySelector('#cpu_m');
+let gpu_m = document.querySelector('#gpu_m');
+let ram_m = document.querySelector('#ram_m');
+let os_m = document.querySelector('#os_m');
+let cap_m = document.querySelector('#cap_m');
+let cap = document.querySelector('#cap');
 
 
-let cpu = document.querySelector('#CPU');
-let gpu = document.querySelector('#GPU');
-let capacity = document.querySelector('#Capacity');
-let os = document.querySelector('#OS');
-let ram = document.querySelector('#RAM');
+
 let imgref = document.querySelector('#myImg');
 let imgref2 = document.querySelector('#myImg2');
 
@@ -57,6 +63,16 @@ function renderGame(doc) {
     ph2.setAttribute("src",  String(doc.action[idgame].URLRef_Image));
     ph3.setAttribute("src",  String(doc.action[idgame].URLRef_Image2));
     video.setAttribute("href",  String(doc.action[idgame].URL_video));
+    cpu.textContent = "CPU : " + doc.action[idgame].System_requirement.recommended_requirement.CPU
+    gpu.textContent = "GPU : " + doc.action[idgame].System_requirement.recommended_requirement.GPU
+    cap.textContent = "Capacity : " + doc.action[idgame].System_requirement.recommended_requirement.Capacity
+    os.textContent = "OS : " + doc.action[idgame].System_requirement.recommended_requirement.OS
+    ram.textContent = "RAM : " + doc.action[idgame].System_requirement.recommended_requirement.RAM
+    cpu_m.textContent = "CPU : " + doc.action[idgame].System_requirement.minimum_requirement.CPU
+    gpu_m.textContent = "GPU : " + doc.action[idgame].System_requirement.minimum_requirement.GPU
+    cap_m.textContent = "Capacity : " + doc.action[idgame].System_requirement.minimum_requirement.Capacity
+    os_m.textContent = "OS : " + doc.action[idgame].System_requirement.minimum_requirement.OS
+    ram_m.textContent = "RAM : " + doc.action[idgame].System_requirement.minimum_requirement.RAM
 
 
     

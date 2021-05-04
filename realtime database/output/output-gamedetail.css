@@ -18,6 +18,9 @@ body {
 div#developer{
   margin-top: 5vh;
 }
+div#genre{
+  margin-top: 3vh;
+}
 /* .content {
     width: 200px;
     height: 300px;

@@ -15,7 +15,9 @@ body {
   align-items: flex-start;
   justify-content: space-around
 }
-
+div#developer{
+  margin-top: 5vh;
+}
 /* .content {
     width: 200px;
     height: 300px;

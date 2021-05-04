@@ -39,7 +39,6 @@ function renderGame(doc) {
     ph.setAttribute("src",  String(doc.action[0].URL_img));
     cpu.textContent = "CPU : " + doc.action[0].System_requirement.recommended_requirement.CPU;
     gpu.textContent = "GPU : " + doc.action[0].System_requirement.recommended_requirement.GPU;
-    capacity.textContent = "Capacity : " + doc.action[0].System_requirement.recommended_requirement.Capacity;
     os.textContent = "OS : " + doc.action[0].System_requirement.recommended_requirement.OS;
     ram.textContent = "RAM : " + doc.action[0].System_requirement.recommended_requirement.RAM;
 

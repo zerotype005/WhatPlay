@@ -171,11 +171,11 @@
     transform: translate(-50%,-50%);
   }
   #loader{
-    border: 16px solid #ededed;
+    border: 16px solid #eef896;
     border-radius: 50%;
     width: 100%;
     height: 100%;
-    border-top: 16px solid #f04342;
+    border-top: 16px solid #7f42f0;
     animation: spin 2s linear infinite;
   }
   @keyframes spin {

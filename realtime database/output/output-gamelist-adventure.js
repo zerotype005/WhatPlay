@@ -242,7 +242,14 @@ function renderGame(id,doc) {
     document.getElementById('RAM').textContent = "RAM :" + doc.adventure[id].System_requirement.minimum_requirement.RAM;
 
 }
-
+window.addEventListener("load", function () {
+    var loading = document.getElementById("loading");
+    loading.style.opacity = 0;
+    setTimeout(destroyLoading, 1000);
+    function destroyLoading(params) {
+        document.body.removeChild(loading);
+    }
+});
 /* function renderGame(doc) {
     for (let i = 0; i < doc.adventure.length; i++) {
         let divcontent = document.createElement('div');

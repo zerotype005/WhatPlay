@@ -215,7 +215,14 @@ function showstory_Nintendo(doc) {
         autoplayHoverPause: true,
     });
 }
-
+window.addEventListener("load", function () {
+    var loading = document.getElementById("loading");
+    loading.style.opacity = 0;
+    setTimeout(destroyLoading, 1000);
+    function destroyLoading(params) {
+        document.body.removeChild(loading);
+    }
+});
 /* function renderGame(doc) {
     for (let i = 0; i < doc.story.length; i++) {
         let divcontent = document.createElement('div');

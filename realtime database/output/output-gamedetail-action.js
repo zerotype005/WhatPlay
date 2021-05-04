@@ -16,6 +16,8 @@ let developer = document.querySelector('#developer');
 let publisher = document.querySelector('#publisher');
 let storelink = document.querySelector('#storelink');
 let image = document.querySelector('#image');
+let video = document.querySelector('#video');
+
 
 let cpu = document.querySelector('#CPU');
 let gpu = document.querySelector('#GPU');
@@ -54,6 +56,8 @@ function renderGame(doc) {
     ph.setAttribute("src",  String(doc.action[idgame].URL_img));
     ph2.setAttribute("src",  String(doc.action[idgame].URLRef_Image));
     ph3.setAttribute("src",  String(doc.action[idgame].URLRef_Image2));
+    video.setAttribute("href",  String(doc.action[idgame].URL_video));
+
 
     
     

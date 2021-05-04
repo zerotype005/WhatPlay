@@ -5,7 +5,7 @@
 } */
 body{
     display: block;
-    background: url("/image/bg_home.png") no-repeat center;
+    background: url("./image/bg_home.png") no-repeat center;
 	background-size: cover;
 	height: 190vh;
 	padding: 0px;

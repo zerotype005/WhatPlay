@@ -59,11 +59,7 @@ function renderGame(doc) {
     ph3.setAttribute("src",  String(doc.action[idgame].URLRef_Image2));
     vd.setAttribute("src", String(doc.action[idgame].URL_video));
 
-    cpu.textContent = "CPU : " + doc.action[idgame].System_requirement.recommended_requirement.CPU;
-    gpu.textContent = "GPU : " + doc.action[idgame].System_requirement.recommended_requirement.GPU;
-    os.textContent = "OS : " + doc.action[idgame].System_requirement.recommended_requirement.OS;
-    ram.textContent = "RAM : " + doc.action[idgame].System_requirement.recommended_requirement.RAM;
-
+    
     
     /* for (let i = 0; i < doc.action.length; i++) {
         let li = document.createElement('li');

@@ -46,8 +46,8 @@ function showstory_pc(doc) {
 
             let button = document.createElement('button');
             button.classList.add('story');
-            button.onclick = function() {showgame(this.id)};
-            button.addEventListener("click", function() {
+            button.onclick = function () { showgame(this.id) };
+            button.addEventListener("click", function () {
                 window.location.href = "output-gamedetail-story.html";
                 localStorage.setItem("id3", button.id);
             });
@@ -115,8 +115,8 @@ function showstory_playstation(doc) {
 
             let button = document.createElement('button');
             button.classList.add('story');
-            button.onclick = function() {showgame(this.id)};
-            button.addEventListener("click", function() {
+            button.onclick = function () { showgame(this.id) };
+            button.addEventListener("click", function () {
                 window.location.href = "output-gamedetail-story.html";
                 localStorage.setItem("id3", button.id);
             });
@@ -184,8 +184,8 @@ function showstory_Nintendo(doc) {
 
             let button = document.createElement('button');
             button.classList.add('story');
-            button.onclick = function() {showgame(this.id)};
-            button.addEventListener("click", function() {
+            button.onclick = function () { showgame(this.id) };
+            button.addEventListener("click", function () {
                 window.location.href = "output-gamedetail-story.html";
                 localStorage.setItem("id3", button.id);
             });
@@ -207,7 +207,7 @@ function showstory_Nintendo(doc) {
 
     div_container.appendChild(div_headtext);
     div_container.appendChild(div_slider);
-    
+
     $(".slider").owlCarousel({
         loop: false,
         autoplay: true,

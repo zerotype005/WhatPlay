@@ -49,7 +49,7 @@ function showaction_pc(doc) {
             button.classList.add('action');
             button.onclick = function() {showgame(this.id)};
             button.addEventListener("click", function() {
-                window.location.href = "output-gamedetail.html";
+                window.location.href = "output-gamedetail-action.html";
                 localStorage.setItem("id", button.id);
             });
             button.textContent = "Read more";
@@ -119,7 +119,7 @@ function showaction_playstation(doc) {
             button.classList.add('action');
             button.onclick = function() {showgame(this.id)};
             button.addEventListener("click", function() {
-                window.location.href = "output-gamedetail.html";
+                window.location.href = "output-gamedetail-action.html";
                 localStorage.setItem("id", button.id);
             });
             button.textContent = "Read more";
@@ -189,7 +189,7 @@ function showaction_Nintendo(doc) {
             button.classList.add('action');
             button.onclick = function() {showgame(this.id)};
             button.addEventListener("click", function() {
-                window.location.href = "output-gamedetail.html";
+                window.location.href = "output-gamedetail-action.html";
                 localStorage.setItem("id", button.id);
             });
             button.textContent = "Read more";

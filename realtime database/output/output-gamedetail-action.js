@@ -23,14 +23,23 @@ let capacity = document.querySelector('#Capacity');
 let os = document.querySelector('#OS');
 let ram = document.querySelector('#RAM');
 let vd = document.querySelector('#video');
+let imgref = document.querySelector('#myImg');
+let imgref2 = document.querySelector('#myImg2');
 
 var x = document.createElement("VIDEO");
 
 var ph = document.createElement("img");
+var ph2 = document.createElement("img");
+var ph3 = document.createElement("img");
+
+
+ph3.setAttribute("alt", "Nice Photo");
+ph2.setAttribute("alt", "Nice Photo");
 ph.setAttribute("alt", "Nice Photo");
 
 image.appendChild(ph);
-
+imgref.appendChild(ph2)
+imgref2.appendChild(ph3)
 
 x.setAttribute("width", "320");
   x.setAttribute("height", "240");
@@ -47,7 +56,9 @@ function renderGame(doc) {
     developer.textContent = "developer : " + doc.action[idgame].Developer;
     publisher.textContent = "publisher :  " + doc.action[idgame].Publisher;
     ph.setAttribute("src",  String(doc.action[idgame].URL_img));
-    x.setAttribute("src",  String(doc.action[idgame].URL_video));
+    ph2.setAttribute("src",  String(doc.action[idgame].URLRef_Image));
+    ph3.setAttribute("src",  String(doc.action[idgame].URLRef_Image2));
+
 
     cpu.textContent = "CPU : " + doc.action[idgame].System_requirement.recommended_requirement.CPU;
     gpu.textContent = "GPU : " + doc.action[idgame].System_requirement.recommended_requirement.GPU;

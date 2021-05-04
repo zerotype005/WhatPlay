@@ -13,7 +13,9 @@ body{
     background-color: #f2f2f2;
     border-color: #dee2e6 #dee2e6 #fff;
 }
-
+.text{
+    font-size: 20px;
+}
 .container-fluid {
     display: flex;
     height: 100%;
@@ -120,16 +122,18 @@ body{
     align-self: flex-start;
     margin-left: 20px;
     margin-top: 20px;
-    font-size: 60px;
+    font-size: 55px;
 }
 
 @media all and (max-width: 992px) {
     
 }
 @media screen and (min-width: 576px) and (max-width: 991px) {
-
+    .text{
+        font-size: 16px;
+    }
     .display-3 {
-        font-size: 40px;
+        font-size: 35px;
     }
     .slider .card{
         width: 80%;
@@ -225,6 +229,9 @@ body{
 
 }
 @media screen and (max-width: 576px) {
+    .text{
+        font-size: 12px;
+    }
     .display-3 {
         font-size: 30px;
     }
@@ -279,17 +286,17 @@ body{
         padding-left: 30px;
     }
     .slider .card .title{
-        font-size: 14px;
+        font-size: 10px;
     }
     .slider .card .sub-title{
-        font-size: 11px;
+        font-size: 8px;
     }
     .card .content .btn button {
         background: #e74c3c;
         color: #fff;
         border: none;
         outline: none;
-        font-size: 12px;
+        font-size: 10px;
         padding: 5px 8px;
         border-radius: 5px;
         cursor: pointer;

@@ -10,11 +10,16 @@ function renderGame(doc) {
     for (let i = 0; i < doc.action.length; i++) {
         let li = document.createElement('li');
         let name = document.createElement('span');
+        let button = document.createElement('button');
+        button.addEventListener("click", function () {
+            localStorage.setItem("",);
+        });
 
         name.textContent = doc.action[i].game_name;
 
 
         li.appendChild(name);
+        li.appendChild(button);
 
         gameList.appendChild(li);
     }

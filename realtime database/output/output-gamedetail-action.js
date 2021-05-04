@@ -4,6 +4,8 @@ dbRef.on('value', (snapshot) => {
     renderGame(data);
 });
 
+let idgame = localStorage.getItem("id");
+
 let headtext1 = document.querySelector('#headtext1');
 let genre = document.querySelector('#genre');
 let platform = document.querySelector('#platform');
@@ -29,18 +31,18 @@ image.appendChild(ph);
 
 
 function renderGame(doc) {
-    headtext1.textContent = doc.action[0].game_name;
-    genre.textContent = "genre : " + doc.action[0].genre;
-    platform.textContent = "platform : " + doc.action[0].Platform;
+    headtext1.textContent = doc.action[idgame].game_name;
+    genre.textContent = "genre : " + doc.action[idgame].genre;
+    platform.textContent = "platform : " + doc.action[idgame].Platform;
     headtext2.textContent = "รายละเอียดของเกม";
-    desc.textContent = doc.action[0].desc;
-    developer.textContent = "developer : " + doc.action[0].Developer;
-    publisher.textContent = "publisher :  " + doc.action[0].Publisher;
-    ph.setAttribute("src",  String(doc.action[0].URL_img));
-    cpu.textContent = "CPU : " + doc.action[0].System_requirement.recommended_requirement.CPU;
-    gpu.textContent = "GPU : " + doc.action[0].System_requirement.recommended_requirement.GPU;
-    os.textContent = "OS : " + doc.action[0].System_requirement.recommended_requirement.OS;
-    ram.textContent = "RAM : " + doc.action[0].System_requirement.recommended_requirement.RAM;
+    desc.textContent = doc.action[idgame].desc;
+    developer.textContent = "developer : " + doc.action[idgame].Developer;
+    publisher.textContent = "publisher :  " + doc.action[idgame].Publisher;
+    ph.setAttribute("src",  String(doc.action[idgame].URL_img));
+    cpu.textContent = "CPU : " + doc.action[idgame].System_requirement.recommended_requirement.CPU;
+    gpu.textContent = "GPU : " + doc.action[idgame].System_requirement.recommended_requirement.GPU;
+    os.textContent = "OS : " + doc.action[idgame].System_requirement.recommended_requirement.OS;
+    ram.textContent = "RAM : " + doc.action[idgame].System_requirement.recommended_requirement.RAM;
 
     
     /* for (let i = 0; i < doc.action.length; i++) {

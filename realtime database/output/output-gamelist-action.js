@@ -45,6 +45,13 @@ function showaction_pc(doc) {
             div_btn.classList.add('btn');
 
             let button = document.createElement('button');
+            button.id = i;
+            button.classList.add('action');
+            button.onclick = function() {showgame(this.id)};
+            button.addEventListener("click", function() {
+                window.location.href = "output-gamedetail.html";
+                localStorage.setItem("id", button.id);
+            });
             button.textContent = "Read more";
 
             div_btn.appendChild(button);
@@ -63,10 +70,10 @@ function showaction_pc(doc) {
 
     div_container.appendChild(div_headtext);
     div_container.appendChild(div_slider);
-
+        
     $(".slider").owlCarousel({
         loop: true,
-        autoplay: true,
+        autoplay: false,
         autoplayTimeout: 5000,
         autoplayHoverPause: true,
     });
@@ -108,6 +115,8 @@ function showaction_playstation(doc) {
             div_btn.classList.add('btn');
 
             let button = document.createElement('button');
+            button.id = i;
+            button.classList.add('action');
             button.textContent = "Read more";
 
             div_btn.appendChild(button);
@@ -129,7 +138,7 @@ function showaction_playstation(doc) {
 
     $(".slider").owlCarousel({
         loop: true,
-        autoplay: true,
+        autoplay: false,
         autoplayTimeout: 5000,
         autoplayHoverPause: true,
     });
@@ -171,6 +180,8 @@ function showaction_Nintendo(doc) {
             div_btn.classList.add('btn');
 
             let button = document.createElement('button');
+            button.id = i;
+            button.classList.add('action');
             button.textContent = "Read more";
 
             div_btn.appendChild(button);
@@ -196,6 +207,30 @@ function showaction_Nintendo(doc) {
         autoplayTimeout: 5000,
         autoplayHoverPause: true,
     });
+}
+
+function renderGame(id,doc) {
+    document.getElementById('headtext1').textContent = doc.action[id].game_name;
+    
+    let imgtag = document.createElement('img');
+    imgtag.src = doc.action[id].URL_img;
+    document.getElementById('image').appendChild(imgtag);
+
+    document.getElementById('genre').textContent = "genre : " + doc.action[id].genre;
+    document.getElementById('platform').textContent = "platform : " + doc.action[id].Platform;
+    document.getElementById('headtext2').textContent = "รายละเอียดของเกม";
+    document.getElementById('desc').textContent = doc.action[id].desc;
+    document.getElementById('developer').textContent = "developer :" + doc.action[id].Developer;
+    document.getElementById('publisher').textContent = "publisher :" + doc.action[id].Developer;
+    document.getElementById('storelink').textContent = "storelink :" + doc.action[id].Developer;
+
+    // recommended_requirement
+    document.getElementById('CPU').textContent = "CPU :" + doc.action[id].System_requirement.minimum_requirement.CPU;
+    document.getElementById('Capacity').textContent = "Capacity :" + doc.action[id].System_requirement.minimum_requirement.Capacity;
+    document.getElementById('GPU').textContent = "GPU :" + doc.action[id].System_requirement.minimum_requirement.GPU;
+    document.getElementById('OS').textContent = "OS :" + doc.action[id].System_requirement.minimum_requirement.OS;
+    document.getElementById('RAM').textContent = "RAM :" + doc.action[id].System_requirement.minimum_requirement.RAM;
+
 }
 
 /* function renderGame(doc) {

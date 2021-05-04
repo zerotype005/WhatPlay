@@ -117,6 +117,11 @@ function showadventure_playstation(doc) {
             let button = document.createElement('button');
             button.id = i;
             button.classList.add('adventure');
+            button.onclick = function() {showgame(this.id)};
+            button.addEventListener("click", function() {
+                window.location.href = "output-gamedetail.html";
+                localStorage.setItem("id", button.id);
+            });
             button.textContent = "Read more";
 
             div_btn.appendChild(button);
@@ -182,6 +187,11 @@ function showadventure_Nintendo(doc) {
             let button = document.createElement('button');
             button.id = i;
             button.classList.add('adventure');
+            button.onclick = function() {showgame(this.id)};
+            button.addEventListener("click", function() {
+                window.location.href = "output-gamedetail.html";
+                localStorage.setItem("id", button.id);
+            });
             button.textContent = "Read more";
 
             div_btn.appendChild(button);

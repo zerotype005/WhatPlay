@@ -117,6 +117,11 @@ function showaction_playstation(doc) {
             let button = document.createElement('button');
             button.id = i;
             button.classList.add('action');
+            button.onclick = function() {showgame(this.id)};
+            button.addEventListener("click", function() {
+                window.location.href = "output-gamedetail.html";
+                localStorage.setItem("id", button.id);
+            });
             button.textContent = "Read more";
 
             div_btn.appendChild(button);
@@ -138,7 +143,7 @@ function showaction_playstation(doc) {
 
     $(".slider").owlCarousel({
         loop: true,
-        autoplay: false,
+        autoplay: true,
         autoplayTimeout: 5000,
         autoplayHoverPause: true,
     });
@@ -182,6 +187,11 @@ function showaction_Nintendo(doc) {
             let button = document.createElement('button');
             button.id = i;
             button.classList.add('action');
+            button.onclick = function() {showgame(this.id)};
+            button.addEventListener("click", function() {
+                window.location.href = "output-gamedetail.html";
+                localStorage.setItem("id", button.id);
+            });
             button.textContent = "Read more";
 
             div_btn.appendChild(button);

@@ -14,7 +14,7 @@ let headtext2 = document.querySelector('#headtext2');
 let desc = document.querySelector('#desc');
 let developer = document.querySelector('#developer');
 let publisher = document.querySelector('#publisher');
-let storelink = document.querySelector('#storelink');
+let store = document.querySelector('#store');
 let image = document.querySelector('#image');
 let imgref = document.querySelector('#myImg');
 let imgref2 = document.querySelector('#myImg2');
@@ -71,7 +71,7 @@ function renderGame(doc) {
 
 
     ph.setAttribute("src",  String(doc.adventure[idgame].URL_img));
-    
+    store.setAttribute("href",  String(doc.action[idgame].UrlStore));
 
     ph2.setAttribute("src",  String(doc.adventure[idgame].URLRef_Image));
     ph3.setAttribute("src",  String(doc.adventure[idgame].URLRef_Image2));

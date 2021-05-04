@@ -14,7 +14,7 @@ let headtext2 = document.querySelector('#headtext2');
 let desc = document.querySelector('#desc');
 let developer = document.querySelector('#developer');
 let publisher = document.querySelector('#publisher');
-let storelink = document.querySelector('#storelink');
+let store = document.querySelector('#store');
 let image = document.querySelector('#image');
 let video = document.querySelector('#video');
 let cpu = document.querySelector('#cpu');
@@ -63,6 +63,7 @@ function renderGame(doc) {
     ph2.setAttribute("src",  String(doc.action[idgame].URLRef_Image));
     ph3.setAttribute("src",  String(doc.action[idgame].URLRef_Image2));
     video.setAttribute("href",  String(doc.action[idgame].URL_video));
+    store.setAttribute("href",  String(doc.action[idgame].UrlStore));
     cpu.textContent = "CPU : " + doc.action[idgame].System_requirement.recommended_requirement.CPU
     gpu.textContent = "GPU : " + doc.action[idgame].System_requirement.recommended_requirement.GPU
     cap.textContent = "Capacity : " + doc.action[idgame].System_requirement.recommended_requirement.Capacity

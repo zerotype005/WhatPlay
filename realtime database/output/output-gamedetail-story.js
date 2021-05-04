@@ -14,7 +14,7 @@ let headtext2 = document.querySelector('#headtext2');
 let desc = document.querySelector('#desc');
 let developer = document.querySelector('#developer');
 let publisher = document.querySelector('#publisher');
-let storelink = document.querySelector('#storelink');
+let store = document.querySelector('#store');
 let image = document.querySelector('#image');
 
 let cpu = document.querySelector('#CPU');
@@ -39,10 +39,20 @@ function renderGame(doc) {
     developer.textContent = "Developer : " + doc.story[idgame].Developer;
     publisher.textContent = "Publisher :  " + doc.story[idgame].Publisher;
     ph.setAttribute("src",  String(doc.story[idgame].URL_img));
+    store.setAttribute("href",  String(doc.action[idgame].UrlStore));
+    ph2.setAttribute("src",  String(doc.adventure[idgame].URLRef_Image));
+    ph3.setAttribute("src",  String(doc.adventure[idgame].URLRef_Image2));
+    video.setAttribute("href",  String(doc.adventure[idgame].URL_video));
     cpu.textContent = "CPU : " + doc.story[idgame].System_requirement.recommended_requirement.CPU;
     gpu.textContent = "GPU : " + doc.story[idgame].System_requirement.recommended_requirement.GPU;
     os.textContent = "OS : " + doc.story[idgame].System_requirement.recommended_requirement.OS;
     ram.textContent = "RAM : " + doc.story[idgame].System_requirement.recommended_requirement.RAM;
+    cpu_m.textContent = "CPU : " + doc.adventure[idgame].System_requirement.minimum_requirement.CPU
+    gpu_m.textContent = "GPU : " + doc.adventure[idgame].System_requirement.minimum_requirement.GPU
+    cap_m.textContent = "Capacity : " + doc.adventure[idgame].System_requirement.minimum_requirement.Capacity
+    os_m.textContent = "OS : " + doc.adventure[idgame].System_requirement.minimum_requirement.OS
+    ram_m.textContent = "RAM : " + doc.adventure[idgame].System_requirement.minimum_requirement.RAM
+    
 
     
     /* for (let i = 0; i < doc.action.length; i++) {

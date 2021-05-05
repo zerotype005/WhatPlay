@@ -54,6 +54,11 @@ function showaction_pc(doc) {
             });
             button.textContent = "Read more";
 
+            img_tag.addEventListener("click", function() {
+                window.location.href = "output-gamedetail-action.html";
+                localStorage.setItem("id", button.id);
+            });
+
             div_btn.appendChild(button);
 
             div_content.appendChild(div_title);
@@ -123,6 +128,11 @@ function showaction_playstation(doc) {
                 localStorage.setItem("id", button.id);
             });
             button.textContent = "Read more";
+
+            img_tag.addEventListener("click", function() {
+                window.location.href = "output-gamedetail-action.html";
+                localStorage.setItem("id", button.id);
+            });
 
             div_btn.appendChild(button);
 
@@ -194,6 +204,11 @@ function showaction_Nintendo(doc) {
             });
             button.textContent = "Read more";
 
+            img_tag.addEventListener("click", function() {
+                window.location.href = "output-gamedetail-action.html";
+                localStorage.setItem("id", button.id);
+            });
+
             div_btn.appendChild(button);
 
             div_content.appendChild(div_title);
@@ -219,29 +234,6 @@ function showaction_Nintendo(doc) {
     });
 }
 
-function renderGame(id,doc) {
-    document.getElementById('headtext1').textContent = doc.action[id].game_name;
-    
-    let imgtag = document.createElement('img');
-    imgtag.src = doc.action[id].URL_img;
-    document.getElementById('image').appendChild(imgtag);
-
-    document.getElementById('genre').textContent = "genre : " + doc.action[id].genre;
-    document.getElementById('platform').textContent = "platform : " + doc.action[id].Platform;
-    document.getElementById('headtext2').textContent = "รายละเอียดของเกม";
-    document.getElementById('desc').textContent = doc.action[id].desc;
-    document.getElementById('developer').textContent = "developer :" + doc.action[id].Developer;
-    document.getElementById('publisher').textContent = "publisher :" + doc.action[id].Developer;
-    document.getElementById('storelink').textContent = "storelink :" + doc.action[id].Developer;
-
-    // recommended_requirement
-    document.getElementById('CPU').textContent = "CPU :" + doc.action[id].System_requirement.minimum_requirement.CPU;
-    document.getElementById('Capacity').textContent = "Capacity :" + doc.action[id].System_requirement.minimum_requirement.Capacity;
-    document.getElementById('GPU').textContent = "GPU :" + doc.action[id].System_requirement.minimum_requirement.GPU;
-    document.getElementById('OS').textContent = "OS :" + doc.action[id].System_requirement.minimum_requirement.OS;
-    document.getElementById('RAM').textContent = "RAM :" + doc.action[id].System_requirement.minimum_requirement.RAM;
-
-}
 window.addEventListener("load", function () {
     var loading = document.getElementById("loading");
     loading.style.opacity = 0;

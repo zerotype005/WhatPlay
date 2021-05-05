@@ -54,6 +54,11 @@ function showadventure_pc(doc) {
             });
             button.textContent = "Read more";
 
+            img_tag.addEventListener("click", function() {
+                window.location.href = "output-gamedetail-adventure.html";
+                localStorage.setItem("id", button.id);
+            });
+
             div_btn.appendChild(button);
 
             div_content.appendChild(div_title);
@@ -124,6 +129,11 @@ function showadventure_playstation(doc) {
             });
             button.textContent = "Read more";
 
+            img_tag.addEventListener("click", function() {
+                window.location.href = "output-gamedetail-adventure.html";
+                localStorage.setItem("id", button.id);
+            });
+
             div_btn.appendChild(button);
 
             div_content.appendChild(div_title);
@@ -193,6 +203,11 @@ function showadventure_Nintendo(doc) {
                 localStorage.setItem("id2", button.id);
             });
             button.textContent = "Read more";
+
+            img_tag.addEventListener("click", function() {
+                window.location.href = "output-gamedetail-adventure.html";
+                localStorage.setItem("id", button.id);
+            });
 
             div_btn.appendChild(button);
 

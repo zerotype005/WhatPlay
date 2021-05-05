@@ -45,6 +45,7 @@ function showstory_pc(doc) {
             div_btn.classList.add('btn');
 
             let button = document.createElement('button');
+            button.id = i;
             button.classList.add('story');
             button.onclick = function () { showgame(this.id) };
             button.addEventListener("click", function () {
@@ -114,6 +115,7 @@ function showstory_playstation(doc) {
             div_btn.classList.add('btn');
 
             let button = document.createElement('button');
+            button.id = i;
             button.classList.add('story');
             button.onclick = function () { showgame(this.id) };
             button.addEventListener("click", function () {
@@ -183,6 +185,7 @@ function showstory_Nintendo(doc) {
             div_btn.classList.add('btn');
 
             let button = document.createElement('button');
+            button.id = i;
             button.classList.add('story');
             button.onclick = function () { showgame(this.id) };
             button.addEventListener("click", function () {

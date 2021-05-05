@@ -71,7 +71,7 @@ function renderGame(doc) {
 
 
     ph.setAttribute("src",  String(doc.adventure[idgame].URL_img));
-    store.setAttribute("href",  String(doc.action[idgame].UrlStore));
+    store.setAttribute("href",  String(doc.adventure[idgame].UrlStore));
 
     ph2.setAttribute("src",  String(doc.adventure[idgame].URLRef_Image));
     ph3.setAttribute("src",  String(doc.adventure[idgame].URLRef_Image2));

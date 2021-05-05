@@ -72,12 +72,12 @@ function renderGame(doc) {
     os_m.textContent = "OS : " + doc.story[idgame].System_requirement.minimum_requirement.OS
     ram_m.textContent = "RAM : " + doc.story[idgame].System_requirement.minimum_requirement.RAM
     
-    ph.setAttribute("src",  String(doc.adventure[idgame].URL_img));
-    store.setAttribute("href",  String(doc.action[idgame].UrlStore));
+    ph.setAttribute("src",  String(doc.story[idgame].URL_img));
+    store.setAttribute("href",  String(doc.story[idgame].UrlStore));
 
-    ph2.setAttribute("src",  String(doc.adventure[idgame].URLRef_Image));
-    ph3.setAttribute("src",  String(doc.adventure[idgame].URLRef_Image2));
-    video.setAttribute("href",  String(doc.adventure[idgame].URL_video));
+    ph2.setAttribute("src",  String(doc.story[idgame].URLRef_Image));
+    ph3.setAttribute("src",  String(doc.story[idgame].URLRef_Image2));
+    video.setAttribute("href",  String(doc.story[idgame].URL_video));
 
     
     /* for (let i = 0; i < doc.action.length; i++) {

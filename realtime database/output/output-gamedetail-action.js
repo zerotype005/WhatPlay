@@ -40,6 +40,8 @@ var ph2 = document.createElement("img");
 var ph3 = document.createElement("img");
 
 
+ph.setAttribute("width", "250");
+ph.setAttribute("height", "350");
 ph3.setAttribute("width", "600");
 ph2.setAttribute("width", "600");
 ph.setAttribute("alt", "Nice Photo");
